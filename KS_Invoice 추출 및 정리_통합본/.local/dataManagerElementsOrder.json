@@ -58,6 +58,8 @@
       "Path": "invoke/invoke_4.Type=WI3Status=open.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "Str_text2&Sequence_14",
+        "Str_text1&Sequence_14",
         "path_workitem_WIID&Sequence_16",
         "get_texid&Sequence_16",
         "cnt_idx&Sequence_11"
