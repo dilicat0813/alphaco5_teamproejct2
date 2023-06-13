@@ -3,8 +3,10 @@
     <x:Property Name="in_out_DT_Workitem" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="in_SourceData_Path" Type="InArgument(x:String)" />
     <x:Property Name="in_pdf" Type="InArgument(x:String)" />
+    <x:Property Name="out_DT_WorkItem_Exist" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="out_DT_WorkItem_NoExist" Type="OutArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1218,2093</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1218,2294</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -107,7 +109,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="668,2028" sap2010:WorkflowViewState.IdRef="Sequence_10">
+  <Sequence sap:VirtualizedContainerService.HintSize="668,2229" sap2010:WorkflowViewState.IdRef="Sequence_10">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -212,7 +214,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:FilterDataTable DataTable="[in_out_DT_Workitem]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="606,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[in_out_DT_Workitem]" SelectColumnsMode="Keep">
+    <ui:FilterDataTable DataTable="[in_out_DT_Workitem]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="606,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[out_DT_WorkItem_Exist]" SelectColumnsMode="Keep">
       <ui:FilterDataTable.Filters>
         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
           <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -222,6 +224,22 @@
             <ui:FilterOperationArgument.Operand>
               <InArgument x:TypeArguments="x:String">["Yes"]</InArgument>
             </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <x:Null />
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
+    <ui:FilterDataTable DataTable="[in_out_DT_Workitem]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="606,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[out_DT_WorkItem_NoExist]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Exist"]</InArgument>
+            </ui:FilterOperationArgument.Column>
           </ui:FilterOperationArgument>
         </scg:List>
       </ui:FilterDataTable.Filters>

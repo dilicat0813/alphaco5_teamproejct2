@@ -20,6 +20,11 @@
       "Path": "0_통합본.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "DT_Workitem_NoExist_2&Flowchart_1",
+        "DT_Workitem_NoExist_1&Flowchart_1",
+        "DT_Workitem_Exist&Flowchart_1",
+        "DT_Workitem_Type1&Flowchart_1",
+        "DT_Workitem_Type2&Flowchart_1",
         "DT_Workitem&Flowchart_1",
         "Str_Id&Flowchart_1",
         "Str_Password&Flowchart_1",
@@ -69,6 +74,117 @@
         "inout_TD_Workitem",
         "in_System1_URL",
         "in_work_items"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_5_PDF파일분류.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Array_pdf_text&Sequence_9",
+        "dump_text&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_DT_WorkItem_NoExist",
+        "out_DT_WorkItem_Exist",
+        "in_pdf",
+        "in_SourceData_Path",
+        "in_out_DT_Workitem"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_6-1_Type1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_line21&Sequence_13",
+        "int_cnt&Sequence_13",
+        "list_col_name&Sequence_18",
+        "dump_text&Sequence_13",
+        "Array_pdf_text&Sequence_13"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_pdf",
+        "Out_DT_Work_item_Type1",
+        "in_SourceData_Path",
+        "in_out_DT_Workitem"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_3.TDWorkitem추출칼럼추가.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "inout_TD_Workitem"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_2.ACME_login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_login_id",
+        "in_pswd"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_6-2_Type2_미작업.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dump_text&Sequence_13",
+        "Array_pdf_text&Sequence_13",
+        "int_cnt&Sequence_13",
+        "str_line21&Sequence_13"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Out_DT_Work_item_Type1",
+        "Out_DT_Work_item_Type2",
+        "in_out_DT_Workitem",
+        "in_SourceData_Path",
+        "in_pdf"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_7_vendor_search_이동및조사.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_get_text&Sequence_21"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_config",
+        "In_out_DT_Workitem_Type1"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_8_VendorID_존재여부_데이터필터.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "Out_DT_Workitem_NoExist_2",
+        "In_Out_DT_Workitem_Type1"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_9_Add_invoice_Detail_입력.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_DT_Workitem_Type1",
+        "in_config"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
