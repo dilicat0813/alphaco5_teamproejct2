@@ -1,0 +1,48 @@
+taxid 없는 wi3
+
+WIID: 93086286
+WIID: 93086282
+WIID: 93086287
+"[d(lalt)]"
+
+"[u(lalt)]"
+
+ALT + 좌클릭하면 PDF 파일 다운이 된다.
+
+WIID: 93100534
+WIID: 93100530
+WIID: 93100542
+
+TaxID 추출
+str_pdfText.Split(Environment.NewLine.ToCharArray)(14).Split(":"c)(1).Trim
+
+Send SMTP Mail Message: 파일 이름, 디렉터리 이름 또는 볼륨 레이블 구문이 잘못되었습니다. : 'C:\Users\th760\git_lecture\lecture2\alphaco5_teamproejct2\RPA_유태호_작업폴더\INVOICE
+
+Invoice ID: 765923
+Vendor: Moretronic Intelligence
+
+Address: Bauhaus Strasse 21 Date: 2017-08-16
+
+City: Munchen,
+
+Country: Germany
+
+TO ACME Systems Inc.
+RO012326
+Somewhere Road, 59
+Building A
+Bucharest
+Romania
+
+Item # Item Description Unit Price Units Total
+
+1  Beverages and Catering 155862 CAD 1 155862 CAD
+
+Subtotal:    155862 CAD
+
+Tax:            31172.4 CAD
+
+Total:          187034 CAD
+
+Payment Terms are seven days from receipt of invoice with authorised timesheet
+'
