@@ -1,0 +1,62 @@
+ example
+ @"Invoice No. 505844 Via Alta 32
+ Roma, Italy
+ Date: 2017-03-12
+ 
+ Vendor: Microtronic Enterprise
+ 
+ Client Name
+ 
+ ACME Systems Inc.
+ 
+ Somewhere Road 59,
+ 
+ Bucharest, Romania
+ 
+ Notes
+ 
+ Invoices must be paid within 20 days starting with the issue date.
+ 
+ Item Description Quantity Price Per Total
+ 
+ Various paper supplies 1 210659 USD 210659 USD
+ 
+ Subtotal: 175549 USD
+ 
+ Tax: 35109.8 USD
+ 
+ Total: 210659 USD
+ "
+
+
+ example2
+ @"INVOICE
+ 
+ Invoice ID: 350285
+ Vendor: Megatronic Incorporated
+ 
+ Address: Strada Sperantei la parter Date: 2017-12-22
+ 
+ Tax ID: RO345879
+ City: Bucuresti,
+ 
+ Country: Romania
+ 
+ TO ACME Systems Inc.
+ RO012326
+ Somewhere Road, 59
+ Building A
+ Bucharest
+ Romania
+ 
+ Item # Item Description Unit Price Units Total
+ 
+ 1  Concierge Services 296044 CAD 1 296044 CAD
+ 
+ Subtotal:    296044 CAD
+ 
+ Tax:            59208.8 CAD
+ 
+ Total:          355253 CAD
+ 
+ Payment Terms are seven days from receipt of invoice with authorised timesheet
