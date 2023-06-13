@@ -29,34 +29,66 @@
  "
 
 
+
  example2
- @"INVOICE
- 
- Invoice ID: 350285
- Vendor: Megatronic Incorporated
- 
- Address: Strada Sperantei la parter Date: 2017-12-22
- 
- Tax ID: RO345879
- City: Bucuresti,
- 
- Country: Romania
- 
- TO ACME Systems Inc.
- RO012326
- Somewhere Road, 59
- Building A
- Bucharest
- Romania
- 
- Item # Item Description Unit Price Units Total
- 
- 1  Concierge Services 296044 CAD 1 296044 CAD
- 
- Subtotal:    296044 CAD
- 
- Tax:            59208.8 CAD
- 
- Total:          355253 CAD
+0 @"INVOICE
+1
+2 Invoice ID: 350285
+3 Vendor: Megatronic Incorporated
+4 
+5 Address: Strada Sperantei la parter Date: 2017-12-22
+6 
+7 Tax ID: RO345879
+8 City: Bucuresti,
+9 
+10 Country: Romania
+11 
+12 TO ACME Systems Inc.
+13 RO012326
+14 Somewhere Road, 59
+15 Building A
+16 Bucharest
+17 Romania
+18 
+19 Item # Item Description Unit Price Units Total
+20 
+21 1  Concierge Services 296044 CAD 1 296044 CAD
+22 
+23 Subtotal:    296044 CAD
+24 
+25 Tax:            59208.8 CAD
+26 
+27 Total:          355253 CAD
  
  Payment Terms are seven days from receipt of invoice with authorised timesheet
+
+
+
+
+ string[19] { "INVOICE", 
+1"Invoice ID: 455359", 
+2"Vendor: Mecatronic Group",
+3"Address: Bulevardul Unirii 11 Date: 2017-01-05",
+4"Tax ID: RO094782", 
+5"City: Iasi,", 
+6"Country: Romania", 
+7"TO ACME Systems Inc.", 
+8"RO012326", 
+9"Somewhere Road, 59", 
+10"Building A", 
+11"Bucharest", 
+12"Romania", 
+"Item # Item Description Unit Price Units Total", 
+14 "1  Beverages and Catering 268857 CAD 1 268857 CAD", 
+"Subtotal:    268857 CAD", 
+"Tax:            53771.4 CAD",
+ "Total:          322628 CAD", "Payment Terms are seven days from receipt of invoice with authorised timesheet" }
+
+
+[Actions,WIID,Description,Type,Status,Date,No.,Client ID,Account Number,Account Amount,Currency,Exist,PDFType,InvoiceID,Vendor,Address,Date1,TaxID,City_Country,to_Name,to_address1,to_city,to_country,to_countrycode,description,unitprice,qty,total_price,subtotal,tax,total
+ ,93085014,Process Vendor Invoice,WI3,Open,2017-05-26,,,,,,Yes,Type1,455359,Mecatronic Group,Bulevardul Unirii 11,2017-01-05,RO094782,"Iasi,, Romania",TO ACME Systems Inc.,"RO012326, Somewhere Road, 59, Building A",Bucharest,Romania,,Beverages and Catering                  ,268857 CAD,1,268857 CAD,268857 CAD,53771.4 CAD,322628 CAD
+ ,93085023,Process Vendor Invoice,WI3,Open,2019-07-04,,,,,,Yes,Type1,135797,Green Restaurant,Strada Verde 67,2017-08-11,RO212121,"Iasi,, Romania",TO ACME Systems Inc.,"RO012326, Somewhere Road, 59, Building A",Bucharest,Romania,,Beverages and Catering                ,70692 EUR,1,70692 EUR,70692 EUR,14138.4 EUR,84830.4 EUR
+ ,93085019,Process Vendor Invoice,WI3,Open,2020-10-23,,,,,,Yes,Type1,181491,Copiers and More,Strada Copiatoarelor 33,2017-05-06,RO874231,"Brasov,, Romania",TO ACME Systems Inc.,"RO012326, Somewhere Road, 59, Building A",Bucharest,Romania,,IT Support                ,22154 CAD,1,22154 CAD,22154 CAD,4430.8 CAD,26584.8 CAD
+ ,93085024,Process Vendor Invoice,WI3,Open,2017-11-14,,,,,,Yes,Type1,288075,Mecatronic Group,Bulevardul Unirii 11,2017-08-04,RO094782,"Iasi,, Romania",TO ACME Systems Inc.,"RO012326, Somewhere Road, 59, Building A",Bucharest,Romania,,Professional Services                  ,291486 USD,1,291486 USD,291486 USD,58297.2 USD,349783 USD
+ ,93085029,Process Vendor Invoice,WI3,Open,2017-11-19,,,,,,Yes,Type1,337547,Copiers and More,Strada Copiatoarelor 33,2017-11-20,RO874231,"Brasov,, Romania",TO ACME Systems Inc.,"RO012326, Somewhere Road, 59, Building A",Bucharest,Romania,,Concierge Services                  ,217185 RON,1,217185 RON,217185 RON,43437 RON,260622 RON
+ ]
