@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "rhSpaLm28JGv1h3ZZR9F6kYLsbA0qd3Zr+cU0oJPS5aXo/yY6kt2IGEturMqjuECZI00DrOYuEtvUJrEH1WM0g==",
+  "dgSpecHash": "2HnRWdU3yv6i+YNfV2axgpYaWQAWNsaTzilYS8Sj4kgQqk9T2zsi1wV5bIsvPIJ/27vrpvF58A/VnpVppSHQVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mkh08\\OneDrive\\문서\\uipath\\alphaco5_teamproject2\\alphaco5_teamproejct2\\KS_Invoice 추출 및 정리_통합본\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\mkh08\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\mkh08\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",
     "C:\\Users\\mkh08\\.nuget\\packages\\closedxml\\0.95.4\\closedxml.0.95.4.nupkg.sha512",
+    "C:\\Users\\mkh08\\.nuget\\packages\\credentialmanagement.standard\\1.0.4\\credentialmanagement.standard.1.0.4.nupkg.sha512",
     "C:\\Users\\mkh08\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
     "C:\\Users\\mkh08\\.nuget\\packages\\documentformat.openxml\\2.12.1\\documentformat.openxml.2.12.1.nupkg.sha512",
     "C:\\Users\\mkh08\\.nuget\\packages\\excelnumberformat\\1.0.10\\excelnumberformat.1.0.10.nupkg.sha512",
@@ -262,6 +263,7 @@
     "C:\\Users\\mkh08\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
     "C:\\Users\\mkh08\\.nuget\\packages\\uipath.codedworkflows\\23.2.0-alpha.3503132\\uipath.codedworkflows.23.2.0-alpha.3503132.nupkg.sha512",
     "C:\\Users\\mkh08\\.nuget\\packages\\uipath.connectionclient\\1.4.3-20221214.2\\uipath.connectionclient.1.4.3-20221214.2.nupkg.sha512",
+    "C:\\Users\\mkh08\\.nuget\\packages\\uipath.credentials.activities\\2.0.0\\uipath.credentials.activities.2.0.0.nupkg.sha512",
     "C:\\Users\\mkh08\\.nuget\\packages\\uipath.excel.activities\\2.20.2\\uipath.excel.activities.2.20.2.nupkg.sha512",
     "C:\\Users\\mkh08\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\uipath.imageprocessing.23.4.0.nupkg.sha512",
     "C:\\Users\\mkh08\\.nuget\\packages\\uipath.mail.activities\\1.20.0\\uipath.mail.activities.1.20.0.nupkg.sha512",

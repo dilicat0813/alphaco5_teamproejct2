@@ -15,6 +15,61 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "0_통합본.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_Workitem&Flowchart_1",
+        "Str_Id&Flowchart_1",
+        "Str_Password&Flowchart_1",
+        "configpath&Sequence_5",
+        "config&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_0_Config_Read.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "List_sheets&Sequence_60",
+        "out_DT_config&Sequence_60"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Configpath",
+        "in_out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_1.OpenBrowser.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_ACME_loginpage"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_4.Type=WI3Status=open.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "path_workitem_WIID&Sequence_16",
+        "get_texid&Sequence_16",
+        "cnt_idx&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_SourceData_Path",
+        "inout_TD_Workitem",
+        "in_System1_URL",
+        "in_work_items"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
