@@ -1,6 +1,9 @@
 # alphaco5_teamproejct2
-alphaco5_teamproejct2
 
+alphaco5_teamproejct2-1
+1. 해커톤(23.6.13. ~ 23. 6. 15.)
+
+alphaco5_teamproejct2-2
 1. 아이디어
 - 법원경매, 점메추, 휴양지추천, 아마존, 영화, 술(맥주 전통주)
 
