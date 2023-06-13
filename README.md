@@ -2,7 +2,6 @@
 
 alphaco5_teamproejct2-1
 1. 해커톤(23.6.13. ~ 23. 6. 15.)
-\n
 
 alphaco5_teamproejct2-2
 1. 아이디어
