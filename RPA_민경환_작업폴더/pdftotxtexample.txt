@@ -29,34 +29,40 @@
  "
 
 
+
+
+
+
+
+
  example2
- @"INVOICE
- 
- Invoice ID: 350285
- Vendor: Megatronic Incorporated
- 
- Address: Strada Sperantei la parter Date: 2017-12-22
- 
- Tax ID: RO345879
- City: Bucuresti,
- 
- Country: Romania
- 
- TO ACME Systems Inc.
- RO012326
- Somewhere Road, 59
- Building A
- Bucharest
- Romania
- 
- Item # Item Description Unit Price Units Total
- 
- 1  Concierge Services 296044 CAD 1 296044 CAD
- 
- Subtotal:    296044 CAD
- 
- Tax:            59208.8 CAD
- 
- Total:          355253 CAD
+0 @"INVOICE
+1
+2 Invoice ID: 350285
+3 Vendor: Megatronic Incorporated
+4 
+5 Address: Strada Sperantei la parter Date: 2017-12-22
+6 
+7 Tax ID: RO345879
+8 City: Bucuresti,
+9 
+10 Country: Romania
+11 
+12 TO ACME Systems Inc.
+13 RO012326
+14 Somewhere Road, 59
+15 Building A
+16 Bucharest
+17 Romania
+18 
+19 Item # Item Description Unit Price Units Total
+20 
+21 1  Concierge Services 296044 CAD 1 296044 CAD
+22 
+23 Subtotal:    296044 CAD
+24 
+25 Tax:            59208.8 CAD
+26 
+27 Total:          355253 CAD
  
  Payment Terms are seven days from receipt of invoice with authorised timesheet
