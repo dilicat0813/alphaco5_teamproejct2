@@ -2,6 +2,7 @@
   <x:Members>
     <x:Property Name="in_out_DT_Workitem" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="in_SourceData_Path" Type="InArgument(x:String)" />
+    <x:Property Name="in_pdf" Type="InArgument(x:String)" />
   </x:Members>
   <sap:VirtualizedContainerService.HintSize>1218,2093</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
@@ -130,7 +131,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[in_SourceData_Path+&quot;\invoice-&quot;+CurrentRow(&quot;WIID&quot;).ToString]" sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[dump_text]" />
+            <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[in_SourceData_Path+&quot;\invoice-&quot;+CurrentRow(&quot;WIID&quot;).ToString+in_pdf]" sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[dump_text]" />
             <If Condition="[dump_text.Contains(&quot;Tax ID&quot;)]" sap:VirtualizedContainerService.HintSize="510,352" sap2010:WorkflowViewState.IdRef="If_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -178,7 +179,7 @@
                       <OutArgument x:TypeArguments="x:Object">[currentrow("PDFType")]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:Object">["type1"]</InArgument>
+                      <InArgument x:TypeArguments="x:Object">["Type1"]</InArgument>
                     </Assign.Value>
                   </Assign>
                 </Sequence>
@@ -195,7 +196,7 @@
                       <OutArgument x:TypeArguments="x:Object">[currentrow("PDFType")]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:Object">["type2"]</InArgument>
+                      <InArgument x:TypeArguments="x:Object">["Type2"]</InArgument>
                     </Assign.Value>
                   </Assign>
                 </Sequence>
