@@ -218,13 +218,27 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
-        "in_config",
-        "in_Password",
+        "in_Int_Port",
         "in_Str_SMTP",
         "in_Str_From",
+        "in_Password",
+        "in_Body",
+        "in_Title",
         "in_Str_To",
-        "in_List_Attach_NoExist2",
-        "in_Int_Port"
+        "in_List_Attach_NoExist2"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/UpdateWorkitem.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_config",
+        "in_DT_Workitem_Type1",
+        "in_DT_Workitem_NoExist_1",
+        "in_DT_Workitem_NoExist_2"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
