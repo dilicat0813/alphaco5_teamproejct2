@@ -330,7 +330,7 @@
                         <OutArgument x:TypeArguments="x:String">[str_line21]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:String">[Array_pdf_text(13)]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[Array_pdf_text(13).replace(".","")]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">

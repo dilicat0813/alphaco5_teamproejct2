@@ -6,7 +6,7 @@
     <x:Property Name="In_Out_DT_Work_item_Type1" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="in_out_DT_Workitem_exist" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1086,2071.3333333333335</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1218,2059</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -112,19 +112,19 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="654,2006.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_12">
+  <Sequence sap:VirtualizedContainerService.HintSize="654,1994" sap2010:WorkflowViewState.IdRef="Sequence_12">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Type1 # 있는 파일" sap:VirtualizedContainerService.HintSize="592,1896" sap2010:WorkflowViewState.IdRef="Sequence_11">
+    <Sequence DisplayName="Type1 # 있는 파일" sap:VirtualizedContainerService.HintSize="592,1883" sap2010:WorkflowViewState.IdRef="Sequence_11">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:FilterDataTable DataTable="[in_out_DT_Workitem_exist]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="530,164" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Out_DT_Work_item_Type2]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable DataTable="[in_out_DT_Workitem_exist]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="530,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Out_DT_Work_item_Type2]" SelectColumnsMode="Keep">
         <ui:FilterDataTable.Filters>
           <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
             <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -143,13 +143,13 @@
           </scg:List>
         </ui:FilterDataTable.SelectColumns>
       </ui:FilterDataTable>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Out_DT_Work_item_Type2]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,1404.6666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Out_DT_Work_item_Type2]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,1394" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,1284.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,1277" sap2010:WorkflowViewState.IdRef="Sequence_13">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="dump_text" />
                 <Variable x:TypeArguments="s:String[]" Name="Array_pdf_text" />
@@ -163,8 +163,8 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[in_SourceData_Path+&quot;\invoice-&quot;+CurrentRow(&quot;WIID&quot;).ToString+in_pdf]" sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[dump_text]" />
-              <Assign sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[in_SourceData_Path+&quot;\invoice-&quot;+CurrentRow(&quot;WIID&quot;).ToString+in_pdf]" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[dump_text]" />
+              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
                 <Assign.To>
                   <OutArgument x:TypeArguments="s:String[]">[Array_pdf_text]</OutArgument>
                 </Assign.To>
@@ -172,7 +172,7 @@
                   <InArgument x:TypeArguments="s:String[]">[dump_text.split(Environment.NewLine.ToArray,StringSplitOptions.RemoveEmptyEntries)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[row_split_length]</OutArgument>
                 </Assign.To>
@@ -180,7 +180,7 @@
                   <InArgument x:TypeArguments="x:Int32">[Array_pdf_text(12).split(" ").count]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:MultipleAssign sap2010:Annotation.AnnotationText="type2 pdf 파싱 작업&#xA;" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,667.3333333333334" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign sap2010:Annotation.AnnotationText="type2 pdf 파싱 작업&#xA;" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,670" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                 <ui:MultipleAssign.AssignOperations>
                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="32">
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -316,7 +316,7 @@
                         <OutArgument x:TypeArguments="x:String">[str_line21]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:String">[Array_pdf_text(12).replace(",","")]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[Array_pdf_text(12).replace(".","")]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
@@ -335,7 +335,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:MultipleAssign>
-              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
             </Sequence>
           </ActivityAction>
         </ui:ForEachRow.Body>
