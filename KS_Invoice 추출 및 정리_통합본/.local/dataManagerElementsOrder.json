@@ -20,8 +20,8 @@
       "Path": "0_통합본.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "List_Attach_NoExist2&Sequence_7",
-        "List_Attach_NoExist1&Sequence_7",
+        "List_Attach_NoExist1&Flowchart_1",
+        "List_Attach_NoExist2&Flowchart_1",
         "DT_Workitem_NoExist_2&Flowchart_1",
         "DT_Workitem_NoExist_1&Flowchart_1",
         "DT_Workitem_Exist&Flowchart_1",
@@ -88,6 +88,7 @@
         "dump_text&Sequence_9"
       ],
       "ArgumentsSectionElementsOrder": [
+        "In_List_attach_1",
         "out_DT_WorkItem_NoExist",
         "out_DT_WorkItem_Exist",
         "in_pdf",
@@ -163,6 +164,9 @@
         "str_get_text&Sequence_21"
       ],
       "ArgumentsSectionElementsOrder": [
+        "In_pdf",
+        "in_SourceData_Path",
+        "In_List_attach_2",
         "In_config",
         "In_out_DT_Workitem_Type1"
       ],
@@ -183,7 +187,10 @@
     {
       "Path": "invoke/invoke_9_Add_invoice_Detail_입력.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "str_get_text&Sequence_28",
+        "bln_find_element&Sequence_28"
+      ],
       "ArgumentsSectionElementsOrder": [
         "in_DT_Workitem_Type1",
         "in_config"
