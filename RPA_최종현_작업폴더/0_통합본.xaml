@@ -179,7 +179,7 @@
           <av:PointCollection x:Key="ConnectorLocation">201,802 201,852</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="//ACME접속 후 &#xA;//DT추출&#xA;//DT필터&#xA;//PDF다운" DisplayName="1. ACME 접속" sap:VirtualizedContainerService.HintSize="450,1372" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence sap2010:Annotation.AnnotationText="//ACME접속 후 &#xA;//DT추출&#xA;//DT필터&#xA;//PDF다운" DisplayName="1. ACME 접속" sap:VirtualizedContainerService.HintSize="200,159" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -462,11 +462,11 @@
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <av:Point x:Key="ShapeLocation">101,2455</av:Point>
-                                          <av:Size x:Key="ShapeSize">200,114</av:Size>
-                                          <av:PointCollection x:Key="ConnectorLocation">201,2569 201,2619</av:PointCollection>
+                                          <av:Size x:Key="ShapeSize">200,143</av:Size>
+                                          <av:PointCollection x:Key="ConnectorLocation">201,2598 201,2619</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Send_Email" sap:VirtualizedContainerService.HintSize="200,114" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                      <Sequence sap2010:Annotation.AnnotationText="//IF를 통하여 첨부파일이 존재하지 않을 경우에는 이메일을 송신하지 않음." DisplayName="Send_Email" sap:VirtualizedContainerService.HintSize="496,813" sap2010:WorkflowViewState.IdRef="Sequence_46">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -527,7 +527,7 @@
                                               <av:Size x:Key="ShapeSize">200,114</av:Size>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="UpdateWorkitem" sap:VirtualizedContainerService.HintSize="200,114" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                          <Sequence sap2010:Annotation.AnnotationText="//Filter 와 For each를 활용" DisplayName="UpdateWorkitem" sap:VirtualizedContainerService.HintSize="200,114" sap2010:WorkflowViewState.IdRef="Sequence_45">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -130,7 +130,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If Condition="[in_List_Attach_NoExist2 Is Nothing]" sap:VirtualizedContainerService.HintSize="410,500" sap2010:WorkflowViewState.IdRef="If_4">
+    <If Condition="[in_List_Attach_NoExist2.Count = 0]" sap:VirtualizedContainerService.HintSize="410,500" sap2010:WorkflowViewState.IdRef="If_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
