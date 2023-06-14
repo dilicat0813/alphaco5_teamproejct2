@@ -20,6 +20,8 @@
       "Path": "0_통합본.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "List_Attach_NoExist2&Sequence_7",
+        "List_Attach_NoExist1&Sequence_7",
         "DT_Workitem_NoExist_2&Flowchart_1",
         "DT_Workitem_NoExist_1&Flowchart_1",
         "DT_Workitem_Exist&Flowchart_1",

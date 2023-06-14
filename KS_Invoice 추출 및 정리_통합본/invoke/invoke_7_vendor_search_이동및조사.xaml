@@ -1,9 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="invoke_7_vendor_search_이동및조사" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="invoke_7_vendor_search_이동및조사" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="In_out_DT_Workitem_Type1" Type="InArgument(sd:DataTable)" />
     <x:Property Name="In_config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="In_List_attach_2" Type="InOutArgument(scg:List(x:String))" />
+    <x:Property Name="in_SourceData_Path" Type="InArgument(x:String)" />
+    <x:Property Name="In_pdf" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1218,2548</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1218,2721</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -37,6 +40,7 @@
       <x:String>System.Net.Mail</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -108,19 +112,19 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="860,2483" sap2010:WorkflowViewState.IdRef="Sequence_24">
+  <Sequence sap:VirtualizedContainerService.HintSize="860,2656" sap2010:WorkflowViewState.IdRef="Sequence_24">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="798,2372" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="befb41ef538df31b3e228e77dcaab0ac" Selector="&lt;html app='chrome.exe' title='ACME System 1 - *' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="798,2545" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="befb41ef538df31b3e228e77dcaab0ac" Selector="&lt;html app='chrome.exe' title='ACME System 1 - *' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="764,2225" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="764,2398" sap2010:WorkflowViewState.IdRef="Sequence_18">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -134,13 +138,13 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:AddDataColumn>
             <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="702,85" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="[in_config(&quot;VendorSearch&quot;).ToString]" />
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Merge한 DT로 변경&#xA;" DataTable="[In_out_DT_Workitem_Type1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="702,1732" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Merge한 DT로 변경&#xA;" DataTable="[In_out_DT_Workitem_Type1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="702,1905" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="668,1575" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="668,1748" sap2010:WorkflowViewState.IdRef="Sequence_19">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -180,13 +184,13 @@
                         </ui:Target>
                       </ui:Click.Target>
                     </ui:Click>
-                    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="606,1122" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="1bd13307941eca209059ae6ce0015246" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Search Results' /&gt;">
+                    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="606,1295" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="1bd13307941eca209059ae6ce0015246" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Search Results' /&gt;">
                       <ui:BrowserScope.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="572,975" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="572,1148" sap2010:WorkflowViewState.IdRef="Sequence_21">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="str_get_text" />
                             </Sequence.Variables>
@@ -211,7 +215,7 @@
                                 <OutArgument x:TypeArguments="x:String">[str_get_text]</OutArgument>
                               </ui:GetValue.Value>
                             </ui:GetValue>
-                            <If Condition="[str_get_text.Contains(&quot;successfully&quot;)]" sap:VirtualizedContainerService.HintSize="510,522" sap2010:WorkflowViewState.IdRef="If_1">
+                            <If Condition="[str_get_text.Contains(&quot;successfully&quot;)]" sap:VirtualizedContainerService.HintSize="510,695" sap2010:WorkflowViewState.IdRef="If_1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -236,7 +240,7 @@
                                 </Sequence>
                               </If.Then>
                               <If.Else>
-                                <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                <Sequence sap:VirtualizedContainerService.HintSize="476,343" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -250,6 +254,7 @@
                                       <InArgument x:TypeArguments="x:Object">["X"]</InArgument>
                                     </Assign.Value>
                                   </Assign>
+                                  <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_1" ItemToAppend="[in_SourceData_Path+&quot;\invoice-&quot;+CurrentRow(&quot;WIID&quot;).ToString+in_pdf]" List="[In_List_attach_2]" />
                                 </Sequence>
                               </If.Else>
                             </If>
