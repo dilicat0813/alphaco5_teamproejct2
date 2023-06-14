@@ -1,12 +1,12 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="invoke_6_1_Type1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_out_DT_Workitem" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="in_SourceData_Path" Type="InArgument(x:String)" />
     <x:Property Name="in_pdf" Type="InArgument(x:String)" />
-    <x:Property Name="Out_DT_Work_item_Type2" Type="OutArgument(sd:DataTable)" />
-    <x:Property Name="In_Out_DT_Work_item_Type1" Type="InOutArgument(sd:DataTable)" />
+    <x:Property Name="in_out_DT_Workitem_NoExist" Type="InOutArgument(sd:DataTable)" />
+    <x:Property Name="Out_DT_Work_item_Type2_NoExist" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="In_Out_DT_Work_item_Type1_NoExist" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1218,819</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1218,2026</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -40,6 +40,8 @@
       <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>UiPath.PDF.Activities</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -110,19 +112,19 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="512,648" sap2010:WorkflowViewState.IdRef="Sequence_12">
+  <Sequence sap:VirtualizedContainerService.HintSize="654,1961" sap2010:WorkflowViewState.IdRef="Sequence_12">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Type1 # 있는 파일" sap:VirtualizedContainerService.HintSize="450,537" sap2010:WorkflowViewState.IdRef="Sequence_11">
+    <Sequence DisplayName="Type1 # 있는 파일" sap:VirtualizedContainerService.HintSize="592,1850" sap2010:WorkflowViewState.IdRef="Sequence_11">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:FilterDataTable DataTable="[in_out_DT_Workitem]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Out_DT_Work_item_Type2]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable DataTable="[in_out_DT_Workitem_NoExist]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="530,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Out_DT_Work_item_Type2_NoExist]" SelectColumnsMode="Keep">
         <ui:FilterDataTable.Filters>
           <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
             <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -141,18 +143,20 @@
           </scg:List>
         </ui:FilterDataTable.SelectColumns>
       </ui:FilterDataTable>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Out_DT_Work_item_Type2]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Out_DT_Work_item_Type2_NoExist]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,1365" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,1170" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,1248" sap2010:WorkflowViewState.IdRef="Sequence_13">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="dump_text" />
                 <Variable x:TypeArguments="s:String[]" Name="Array_pdf_text" />
                 <Variable x:TypeArguments="x:Int32" Name="int_cnt" />
                 <Variable x:TypeArguments="x:String" Name="str_line21" />
+                <Variable x:TypeArguments="x:Int32" Name="row_split_length" />
+                <Variable x:TypeArguments="x:Object" Name="row_split" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -168,7 +172,15 @@
                   <InArgument x:TypeArguments="s:String[]">[dump_text.split(Environment.NewLine.ToArray,StringSplitOptions.RemoveEmptyEntries)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:MultipleAssign sap2010:Annotation.AnnotationText="현재 타입1 데이터 형식 그대로 가져옴&#xA;--&gt; 수정 필요&#xA;" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,685" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[row_split_length]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[Array_pdf_text(11).split(" ").count]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:MultipleAssign sap2010:Annotation.AnnotationText="type2 pdf 파싱 작업&#xA;" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,639" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                 <ui:MultipleAssign.AssignOperations>
                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="32">
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -176,7 +188,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("InvoiceID")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(1).split(":")(1).tostring.Trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(0).split(" ")(2).tostring.Trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -184,7 +196,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("Vendor")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(2).split(":")(1).tostring.Trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(3).split(":")(1).tostring.Trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -192,7 +204,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("Address")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(3).split(":")(1).tostring.replace("Date","").Trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[String.Join(" ", Array_pdf_text(0).split(" ").ToList().GetRange(3, Array_pdf_text(0).split(" ").count - 3).ToArray).Trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -200,15 +212,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("Date1")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(3).split(":")(2).tostring.Trim()]</InArgument>
-                      </ui:AssignOperation.Value>
-                    </ui:AssignOperation>
-                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
-                      <ui:AssignOperation.To>
-                        <OutArgument x:TypeArguments="x:Object">[CurrentRow("TaxID")]</OutArgument>
-                      </ui:AssignOperation.To>
-                      <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(4).split(":")(1).tostring.Trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(2).split(":")(1).tostring.Trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
@@ -216,7 +220,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("City_Country")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(5).split(":")(1).tostring.Trim()+Array_pdf_text(6).split(":")(1).tostring.Trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(1)]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
@@ -224,7 +228,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("to_Name")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(7).tostring.Trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(5).tostring.Trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
@@ -232,7 +236,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("to_address1")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(8).tostring.Trim()+", "+Array_pdf_text(9).tostring.Trim()+", "+Array_pdf_text(10).tostring.Trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(6).tostring.Trim() + " " + Array_pdf_text(7).tostring.Trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
@@ -240,7 +244,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("to_city")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(11).tostring.Trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(7).split(",")(0).tostring.Trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
@@ -248,7 +252,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("to_country")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(12).tostring.Trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(7).split(",")(1).tostring.Trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
@@ -256,7 +260,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("unitprice")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(14).split(" ")(Array_pdf_text(14).split(" ").count-5).ToString+" "+Array_pdf_text(14).split(" ")(Array_pdf_text(14).split(" ").count-4).ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(11).split(" ")(row_split_length-4).ToString + " " + Array_pdf_text(11).split(" ")(row_split_length-3).ToString]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
@@ -264,7 +268,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("qty")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(14).split(" ")(Array_pdf_text(14).split(" ").count-3).ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(11).split(" ")(Array_pdf_text(11).split(" ").count-5).ToString]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
@@ -272,7 +276,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("total_price")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(14).split(" ")(Array_pdf_text(14).split(" ").count-2).ToString+" "+Array_pdf_text(14).split(" ")(Array_pdf_text(14).split(" ").count-1).ToString]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(11).split(" ")(row_split_length - 2).ToString + " " + Array_pdf_text(11).split(" ")(row_split_length - 1).ToString]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
@@ -280,7 +284,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("subtotal")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(15).split(":")(1).tostring.Trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(12).split(":")(1).tostring.Trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
@@ -288,7 +292,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("tax")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(16).split(":")(1).tostring.Trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(13).split(":")(1).tostring.Trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
@@ -296,7 +300,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("total")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(17).split(":")(1).tostring.Trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Array_pdf_text(14).split(":")(1).tostring.Trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
@@ -304,15 +308,15 @@
                         <OutArgument x:TypeArguments="x:String">[str_line21]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:String">[Array_pdf_text(14)]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[Array_pdf_text(11).replace(".","")]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
                       <ui:AssignOperation.To>
-                        <OutArgument x:TypeArguments="x:Object">[currentrow("description")]</OutArgument>
+                        <OutArgument x:TypeArguments="x:Object">[Currentrow("description")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[system.text.RegularExpressions.regex.replace(str_line21,"\d"," ").trim().replace(Array_pdf_text(14).split(" ")(Array_pdf_text(14).split(" ").count-1).tostring, "").trim()]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[system.text.RegularExpressions.regex.replace(str_line21,"\d"," ").trim().replace(Array_pdf_text(11).split(" ")(Array_pdf_text(11).split(" ").count-1).tostring, "").trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                   </scg:List>
@@ -323,18 +327,18 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:MultipleAssign>
-              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="Delay_1" />
             </Sequence>
           </ActivityAction>
         </ui:ForEachRow.Body>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEachRow>
-      <ui:MergeDataTable Destination="[In_Out_DT_Work_item_Type1]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[Out_DT_Work_item_Type2]" />
+      <ui:MergeDataTable Destination="[In_Out_DT_Work_item_Type1_NoExist]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="530,133" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[Out_DT_Work_item_Type2_NoExist]" />
     </Sequence>
   </Sequence>
 </Activity>
