@@ -20,8 +20,13 @@
       "Path": "0_통합본.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "DT_Workitem_Type2_NoExist&Sequence_44",
-        "DT_Workitem_Type1_NoExist&Sequence_44",
+        "Str_ISO_EU&Sequence_45",
+        "list_col_name&Sequence_47",
+        "Str_ISO_Numeric&Sequence_45",
+        "Str_Iso_alpha2&Sequence_45",
+        "DT_ISO_Main&Flowchart_1",
+        "DT_Workitem_Type1_NoExist&Flowchart_1",
+        "DT_Workitem_Type2_NoExist&Flowchart_1",
         "DT_Workitem_Exist_2&Flowchart_1",
         "List_Attach_NoExist1&Flowchart_1",
         "List_Attach_NoExist2&Flowchart_1",
@@ -206,7 +211,6 @@
       "Path": "invoke/invoke_10_lookup_data_code.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "DT_ISO_Main&Sequence_36",
         "DT_ISO_numeric&Sequence_36",
         "DT_ISO_EU&Sequence_36",
         "Str_numeric&Sequence_37",
@@ -214,6 +218,7 @@
         "Str_EU&Sequence_37"
       ],
       "ArgumentsSectionElementsOrder": [
+        "out_DT_ISO_Main",
         "in_config"
       ],
       "ConstantsSectionElementsOrder": [],
@@ -277,6 +282,30 @@
         "in_SourceData_Path",
         "in_pdf"
       ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "0_통합본_0614_백업.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "config&Flowchart_1",
+        "Str_Password&Flowchart_1",
+        "Str_Id&Flowchart_1",
+        "DT_Workitem&Flowchart_1",
+        "DT_Workitem_Type2&Flowchart_1",
+        "DT_Workitem_Type1&Flowchart_1",
+        "DT_Workitem_Exist&Flowchart_1",
+        "DT_Workitem_NoExist_1&Flowchart_1",
+        "DT_Workitem_NoExist_2&Flowchart_1",
+        "List_Attach_NoExist2&Flowchart_1",
+        "List_Attach_NoExist1&Flowchart_1",
+        "DT_Workitem_Exist_2&Flowchart_1",
+        "configpath&Sequence_5",
+        "DT_Workitem_Type1_NoExist&Sequence_44",
+        "DT_Workitem_Type2_NoExist&Sequence_44"
+      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }

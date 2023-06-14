@@ -52,72 +52,73 @@
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
-      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>CredentialManagement</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>PresentationUI</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
-      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
-      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
-      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Windows.Presentation</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>System.Xaml</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
-      <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.ObjectModel</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>PresentationFramework</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>netstandard</AssemblyReference>
-      <AssemblyReference>CredentialManagement</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
       <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
-      <AssemblyReference>System.Private.Xml</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
-      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>PresentationCore</AssemblyReference>
-      <AssemblyReference>PresentationUI</AssemblyReference>
-      <AssemblyReference>System.Windows.Presentation</AssemblyReference>
-      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="_0_통합본" sap:VirtualizedContainerService.HintSize="714,2586" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -238,24 +239,12 @@
             </sap:WorkflowViewStateService.ViewState>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_5_pdf_to_text.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="invoke\invoke_5_PDF파일분류.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem">
-                  <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem" />
-                </InOutArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">
-                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;SourceData&quot;).ToString" />
-                </InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_pdf">
-                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;pdf&quot;).ToString" />
-                </InArgument>
-                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_WorkItem_Exist">
-                  <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Exist" />
-                </OutArgument>
-                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_WorkItem_NoExist">
-                  <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_NoExist_1" />
-                </OutArgument>
-                <InOutArgument x:TypeArguments="scg:List(x:String)" x:Key="In_List_attach_1">
-                  <VisualBasicReference x:TypeArguments="scg:List(x:String)" ExpressionText="List_Attach_NoExist1" />
-                </InOutArgument>
+                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem">[DT_Workitem]</InOutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">[config("SourceData").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_pdf">[config("pdf").ToString]</InArgument>
+                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_WorkItem_Exist">[DT_Workitem_Exist]</OutArgument>
+                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_WorkItem_NoExist">[DT_Workitem_NoExist_1]</OutArgument>
+                <InOutArgument x:TypeArguments="scg:List(x:String)" x:Key="In_List_attach_1">[List_Attach_NoExist1]</InOutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
           </Sequence>
@@ -283,38 +272,20 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_6-1_Type1.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="invoke\invoke_6-1_Type1.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">
-                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;SourceData&quot;).ToString" />
-                      </InArgument>
-                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type1">
-                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type1" />
-                      </OutArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">
-                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;pdf&quot;).ToString" />
-                      </InArgument>
-                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_exist">
-                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Exist" />
-                      </InOutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">[config("SourceData").ToString]</InArgument>
+                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type1">[DT_Workitem_Type1]</OutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">[config("pdf").ToString]</InArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_exist">[DT_Workitem_Exist]</InOutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;TaxID Exist PDF_Type1 자료 추출 완료&quot;]" />
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_6-2_Type2.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="invoke\invoke_6-2_Type2.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">
-                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;SourceData&quot;).ToString" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">
-                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;pdf&quot;).ToString" />
-                      </InArgument>
-                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type2">
-                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type2" />
-                      </OutArgument>
-                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_Out_DT_Work_item_Type1">
-                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type1" />
-                      </InOutArgument>
-                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_exist">
-                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Exist" />
-                      </InOutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">[config("SourceData").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">[config("pdf").ToString]</InArgument>
+                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type2">[DT_Workitem_Type2]</OutArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_Out_DT_Work_item_Type1">[DT_Workitem_Type1]</InOutArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_exist">[DT_Workitem_Exist]</InOutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;TaxID Exist PDF_Type2 자료 추출 완료&quot;]" />
@@ -331,38 +302,20 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_6-3_Type1_noexist.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="invoke\invoke_6-3_Type1_noexist.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">
-                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;SourceData&quot;).ToString" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">
-                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;pdf&quot;).ToString" />
-                      </InArgument>
-                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_noexist">
-                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_NoExist_1" />
-                      </InOutArgument>
-                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type1_noexist">
-                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type1_NoExist" />
-                      </OutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">[config("SourceData").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">[config("pdf").ToString]</InArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_noexist">[DT_Workitem_NoExist_1]</InOutArgument>
+                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type1_noexist">[DT_Workitem_Type1_NoExist]</OutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;TaxID Exist PDF_Type1 자료 추출 완료&quot;]" />
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_6-4_Type2_noexist.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="invoke\invoke_6-4_Type2_noexist.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">
-                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;SourceData&quot;).ToString" />
-                      </InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">
-                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;pdf&quot;).ToString" />
-                      </InArgument>
-                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_NoExist">
-                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_NoExist_1" />
-                      </InOutArgument>
-                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type2_NoExist">
-                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type2_NoExist" />
-                      </OutArgument>
-                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_Out_DT_Work_item_Type1_NoExist">
-                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type1_NoExist" />
-                      </InOutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">[config("SourceData").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">[config("pdf").ToString]</InArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_NoExist">[DT_Workitem_NoExist_1]</InOutArgument>
+                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type2_NoExist">[DT_Workitem_Type2_NoExist]</OutArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_Out_DT_Work_item_Type1_NoExist">[DT_Workitem_Type1_NoExist]</InOutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;TaxID Exist PDF_Type2 자료 추출 완료&quot;]" />
@@ -425,15 +378,9 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_8_VendorID_존재여부_데이터필터.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="invoke\invoke_8_VendorID_존재여부_데이터필터.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
-                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_Out_DT_Workitem_Type1">
-                              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type1" />
-                            </InOutArgument>
-                            <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Workitem_NoExist_2">
-                              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_NoExist_2" />
-                            </OutArgument>
-                            <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_WorkItem_Exist_2">
-                              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Exist_2" />
-                            </OutArgument>
+                            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_Out_DT_Workitem_Type1">[DT_Workitem_Type1]</InOutArgument>
+                            <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Workitem_NoExist_2">[DT_Workitem_NoExist_2]</OutArgument>
+                            <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_WorkItem_Exist_2">[DT_Workitem_Exist_2]</OutArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                       </Sequence>
@@ -446,7 +393,7 @@
                               <av:PointCollection x:Key="ConnectorLocation">201,2048 201,2073</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence sap2010:Annotation.AnnotationText="// O인 (Add invoice Detail) 데이터 입력&#xA;//정상작동 확인 완료&#xD;&#xA;//DT_Exist2 사용, 데이터 추가 없음" DisplayName="6. Add Invoice Detail 입력" sap:VirtualizedContainerService.HintSize="200,168" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                          <Sequence sap2010:Annotation.AnnotationText="// O인 (Add invoice Detail) 데이터 입력&#xA;//정상작동 확인 완료&#xA;//DT_Exist2 사용, 데이터 추가 없음" DisplayName="6. Add Invoice Detail 입력" sap:VirtualizedContainerService.HintSize="200,168" sap2010:WorkflowViewState.IdRef="Sequence_25">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -455,12 +402,8 @@
                             </sap:WorkflowViewStateService.ViewState>
                             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_9_Add_invoice_Detail_입력.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="invoke\invoke_9_Add_invoice_Detail_입력.xaml">
                               <ui:InvokeWorkflowFile.Arguments>
-                                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_config">
-                                  <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="config" />
-                                </InArgument>
-                                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT_Workitem_Type1">
-                                  <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Exist_2" />
-                                </InArgument>
+                                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_config">[config]</InArgument>
+                                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT_Workitem_Type1">[DT_Workitem_Exist_2]</InArgument>
                               </ui:InvokeWorkflowFile.Arguments>
                             </ui:InvokeWorkflowFile>
                           </Sequence>
