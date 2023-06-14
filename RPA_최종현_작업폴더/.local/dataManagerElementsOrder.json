@@ -20,11 +20,14 @@
       "Path": "0_통합본.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "Password&Flowchart_1",
-        "Int_Port&Flowchart_1",
         "Str_SMTP&Flowchart_1",
+        "Int_Port&Flowchart_1",
+        "Password&Flowchart_1",
         "Str_From&Flowchart_1",
         "Str_To&Flowchart_1",
+        "DT_Workitem_Exist_2&Flowchart_1",
+        "DT_Workitem_Type1_NoExist&Flowchart_1",
+        "DT_Workitem_Type2_NoExist&Flowchart_1",
         "List_Attach_NoExist2&Flowchart_1",
         "List_Attach_NoExist1&Flowchart_1",
         "DT_Workitem_NoExist_2&Flowchart_1",
@@ -189,7 +192,10 @@
     {
       "Path": "invoke/invoke_9_Add_invoice_Detail_입력.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "bln_find_element&Sequence_28",
+        "str_get_text&Sequence_28"
+      ],
       "ArgumentsSectionElementsOrder": [
         "in_DT_Workitem_Type1",
         "in_config"
@@ -233,12 +239,31 @@
     {
       "Path": "invoke/UpdateWorkitem.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "DT_Workitem_NoExist_1&Sequence_44",
+        "DT_Workitem_NoExist_2&Sequence_44",
+        "DT_Workitem_Exist&Sequence_44"
+      ],
       "ArgumentsSectionElementsOrder": [
         "in_config",
-        "in_DT_Workitem_Type1",
-        "in_DT_Workitem_NoExist_1",
-        "in_DT_Workitem_NoExist_2"
+        "in_DT_Workitem_Type1"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_10_lookup_data_code.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_ISO_Main&Sequence_36",
+        "DT_ISO_numeric&Sequence_36",
+        "DT_ISO_EU&Sequence_36",
+        "Str_numeric&Sequence_37",
+        "Str_continent&Sequence_37",
+        "Str_EU&Sequence_37"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_config"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
