@@ -20,10 +20,6 @@
       "Path": "0_통합본.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "Str_ISO_EU&Sequence_45",
-        "list_col_name&Sequence_47",
-        "Str_ISO_Numeric&Sequence_45",
-        "Str_Iso_alpha2&Sequence_45",
         "DT_ISO_Main&Flowchart_1",
         "DT_Workitem_Type1_NoExist&Flowchart_1",
         "DT_Workitem_Type2_NoExist&Flowchart_1",
@@ -60,7 +56,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "invoke/invoke_1.OpenBrowser.xaml",
+      "Path": "invoke/invoke_01.OpenBrowser.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
@@ -70,7 +66,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "invoke/invoke_4.Type=WI3Status=open.xaml",
+      "Path": "invoke/invoke_04.Type=WI3Status=open.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "Str_text2&Sequence_14",
@@ -89,7 +85,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "invoke/invoke_5_PDF파일분류.xaml",
+      "Path": "invoke/invoke_05_PDF파일분류.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "Array_pdf_text&Sequence_9",
@@ -107,7 +103,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "invoke/invoke_6-1_Type1.xaml",
+      "Path": "invoke/invoke_06-1_Type1.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "str_line21&Sequence_13",
@@ -126,7 +122,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "invoke/invoke_3.TDWorkitem추출칼럼추가.xaml",
+      "Path": "invoke/invoke_03.TDWorkitem추출칼럼추가.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
@@ -136,7 +132,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "invoke/invoke_2.ACME_login.xaml",
+      "Path": "invoke/invoke_02.ACME_login.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
@@ -166,7 +162,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "invoke/invoke_7_vendor_search_이동및조사.xaml",
+      "Path": "invoke/invoke_07_vendor_search_이동및조사.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "str_get_text&Sequence_21"
@@ -182,7 +178,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "invoke/invoke_8_VendorID_존재여부_데이터필터.xaml",
+      "Path": "invoke/invoke_08_VendorID_존재여부_데이터필터.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
@@ -194,7 +190,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "invoke/invoke_9_Add_invoice_Detail_입력.xaml",
+      "Path": "invoke/invoke_09_Add_invoice_Detail_입력.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "str_get_text&Sequence_28",
@@ -225,7 +221,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "invoke/invoke_6-2_Type2.xaml",
+      "Path": "invoke/invoke_06-2_Type2.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "dump_text&Sequence_13",
@@ -246,7 +242,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "invoke/invoke_6-3_Type1_noexist.xaml",
+      "Path": "invoke/invoke_06-3_Type1_noexist.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "list_col_name&Sequence_18",
@@ -265,7 +261,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "invoke/invoke_6-4_Type2_noexist.xaml",
+      "Path": "invoke/invoke_06-4_Type2_noexist.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "dump_text&Sequence_13",
@@ -306,6 +302,22 @@
         "DT_Workitem_Type2_NoExist&Sequence_44"
       ],
       "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_11_lookup_iso_and_main_dt.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "list_col_name&Sequence_47",
+        "Str_Iso_alpha2&Sequence_45",
+        "Str_ISO_Numeric&Sequence_45",
+        "Str_ISO_EU&Sequence_45"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_DT_ISO_Main",
+        "In_Out_DT_Workitem_Type1"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }

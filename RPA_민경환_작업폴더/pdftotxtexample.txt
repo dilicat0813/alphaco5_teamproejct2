@@ -142,3 +142,4 @@ InvoiceID,Vendor,Address,Date1,TaxID,City_Country,to_Name,to_address1,to_city,to
 
  ,93085026,Process Vendor Invoice,WI3,Open,2021-06-22,,Type2,805266,Copiers and More,Strada Copiatoarelor 33,2017-09-17,,"Brasov, Romania",ACME Systems Inc.,"Somewhere Road 59, Bucharest, Romania",Bucharest,Romania,RO,Beverages and Catering,79608 USD,1,79608 USD,66340 USD,13268 USD,79608 USD,,428,I,EU
  ]
+
