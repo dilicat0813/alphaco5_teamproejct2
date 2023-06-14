@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1086,782" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1091.3333333333333,1400" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -29,6 +29,11 @@
       <x:String>UiPath.PDF.Activities</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -78,12 +83,27 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="548.6666666666666,717.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="548.6666666666666,1335.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="pdf1_text_1" />
       <Variable x:TypeArguments="x:String" Name="pdf1_text_2" />
+      <Variable x:TypeArguments="s:String[]" Name="Array_pdf_text" />
+      <Variable x:TypeArguments="x:String" Name="dump_text" />
+      <Variable x:TypeArguments="x:Int32" Name="row_split_length" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -91,7 +111,35 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="pdf_type2\Invoice-401622.pdf" sap:VirtualizedContainerService.HintSize="486.6666666666667,84" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[pdf1_text_1]" />
-    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="pdf_texted\text_1txt" sap:VirtualizedContainerService.HintSize="486.6666666666667,136.66666666666666" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[pdf1_text_1]" />
+    <Assign sap:VirtualizedContainerService.HintSize="486.6666666666667,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[Array_pdf_text]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[pdf1_text_1.split(Environment.NewLine.ToArray,StringSplitOptions.RemoveEmptyEntries)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="486.6666666666667,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[row_split_length]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">[Array_pdf_text(12).split(" ").count]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="test_result\결과값확인.txt" sap:VirtualizedContainerService.HintSize="486.6666666666667,136.66666666666666" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[Array_pdf_text(0).split(&quot; &quot;)(2).tostring.Trim() + vbNewLine +&#xD;&#xA;Array_pdf_text(3).split(&quot;:&quot;)(1).tostring.Trim() + vbNewLine +&#xD;&#xA;String.Join(&quot; &quot;, Array_pdf_text(0).split(&quot; &quot;).ToList().GetRange(3, Array_pdf_text(0).split(&quot; &quot;).count - 3).ToArray) +vbNewLine +&#xD;&#xA;Array_pdf_text(2).split(&quot;:&quot;)(1).tostring.Trim() + vbNewLine +&#xD;&#xA;Array_pdf_text(4).split(&quot;:&quot;)(1).tostring.Trim() +vbNewLine +&#xD;&#xA;Array_pdf_text(1) + vbNewLine +&#xD;&#xA;Array_pdf_text(6).tostring.Trim() + vbNewLine +&#xD;&#xA;Array_pdf_text(7).tostring.Trim() + Array_pdf_text(8).tostring.Trim() + vbNewLine +&#xD;&#xA;Array_pdf_text(8).split(&quot;,&quot;)(0).tostring.Trim() + vbNewLine +&#xD;&#xA;Array_pdf_text(8).split(&quot;,&quot;)(1).tostring.Trim() + vbNewLine +&#xD;&#xA;Array_pdf_text(12).split(&quot; &quot;)(row_split_length-4).ToString + &quot; &quot; + Array_pdf_text(12).split(&quot; &quot;)(row_split_length-3).ToString + vbNewLine +&#xD;&#xA;Array_pdf_text(12).split(&quot; &quot;)(Array_pdf_text(12).split(&quot; &quot;).count-5).ToString +vbNewLine +&#xD;&#xA;Array_pdf_text(12).split(&quot; &quot;)(row_split_length - 2).ToString + &quot; &quot; + Array_pdf_text(12).split(&quot; &quot;)(row_split_length - 1).ToString + vbNewLine +&#xD;&#xA;Array_pdf_text(13).split(&quot;:&quot;)(1).tostring.Trim() + vbNewLine +&#xD;&#xA;Array_pdf_text(14).split(&quot;:&quot;)(1).tostring.Trim() + vbNewLine +&#xD;&#xA;Array_pdf_text(15).split(&quot;:&quot;)(1).tostring.Trim() + vbNewLine +&#xD;&#xA;Array_pdf_text(12) + vbNewLine +&#xD;&#xA;system.text.RegularExpressions.regex.replace(Array_pdf_text(12),&quot;\d&quot;,&quot; &quot;).trim().replace(Array_pdf_text(12).split(&quot; &quot;)(Array_pdf_text(12).split(&quot; &quot;).count-1).tostring, &quot;&quot;).trim() + vbNewLine]" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.6666666666667,327.3333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,247.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="pdf_texted\text_1_type_1.txt" sap:VirtualizedContainerService.HintSize="388,136.66666666666666" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[pdf1_text_1]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.6666666666667,306" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
         <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_2">

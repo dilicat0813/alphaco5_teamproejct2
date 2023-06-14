@@ -1,0 +1,32 @@
+0 Invoice No. 401622 Strada Sperantei la parter
+1 Bucuresti, Romania
+2 Date: 2017-11-26
+
+3 Vendor: Megatronic Incorporated
+4 Tax ID: RO345879
+
+5 Client Name
+
+6 ACME Systems Inc.
+
+7 Somewhere Road 59,
+
+8 Bucharest, Romania
+
+9 Notes
+
+10 Invoices must be paid within 20 days starting with the issue date.
+
+11 Item Description Quantity Price Per Total
+
+12 IT Support 1 121927 RON 121927 RON
+
+13 Subtotal: 101606 RON
+
+14 Tax: 20321.2 RON
+
+15 Total: 121927 RON
+
+
+----------------------------------------------
+- Address 다시 처리할 것

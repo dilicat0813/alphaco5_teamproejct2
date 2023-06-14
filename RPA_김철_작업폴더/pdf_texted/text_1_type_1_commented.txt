@@ -1,0 +1,34 @@
+0 INVOICE
+
+1 Invoice ID: 652863
+2 Vendor: Godmother Catering
+
+3 Address: Strada Flamanda 45 Date: 2017-05-19
+
+4 Tax ID: RO123456
+5 City: Bucuresti,
+
+6 Country: Romania
+
+7 TO ACME Systems Inc.
+8 RO012326
+9 Somewhere Road, 59
+10 Building A
+11 Bucharest
+12 Romania
+
+13 Item # Item Description Unit Price Units Total
+
+14 1  IT Support 269227 USD 1 269227 USD
+
+15 Subtotal:    269227 USD
+
+16 Tax:            53845.4 USD
+
+17 Total:          323072 USD
+
+18 Payment Terms are seven days from receipt of invoice with authorised timesheet
+
+
+----------------------------------------------
+- TO Name에서 TO가 포함되는걸로 보이는데 수정할 것
