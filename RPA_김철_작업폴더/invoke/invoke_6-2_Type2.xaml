@@ -6,7 +6,7 @@
     <x:Property Name="Out_DT_Work_item_Type2" Type="OutArgument(sd:DataTable)" />
     <x:Property Name="In_Out_DT_Work_item_Type1" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1086,720.6666666666666</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1091.3333333333333,720.6666666666666</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -204,7 +204,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("Address")]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:Object">[String.Join(" ", Array_pdf_text(0).split(" ").ToList().GetRange(3, Array_pdf_text(0).split(" ").count - 3).ToArray)]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[String.Join(" ", Array_pdf_text(0).split(" ").ToList().GetRange(3, Array_pdf_text(0).split(" ").count - 3).ToArray).Trim()]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
