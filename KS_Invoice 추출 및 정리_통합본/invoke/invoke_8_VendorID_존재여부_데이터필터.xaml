@@ -2,6 +2,7 @@
   <x:Members>
     <x:Property Name="In_Out_DT_Workitem_Type1" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="Out_DT_Workitem_NoExist_2" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="Out_DT_WorkItem_Exist_2" Type="OutArgument(sd:DataTable)" />
   </x:Members>
   <sap:VirtualizedContainerService.HintSize>1218,719</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
@@ -130,7 +131,7 @@
         </scg:List>
       </ui:FilterDataTable.SelectColumns>
     </ui:FilterDataTable>
-    <ui:FilterDataTable DataTable="[In_Out_DT_Workitem_Type1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[In_Out_DT_Workitem_Type1]" SelectColumnsMode="Keep">
+    <ui:FilterDataTable DataTable="[In_Out_DT_Workitem_Type1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Out_DT_WorkItem_Exist_2]" SelectColumnsMode="Keep">
       <ui:FilterDataTable.Filters>
         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
           <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">

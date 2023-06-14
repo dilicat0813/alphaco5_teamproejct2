@@ -20,6 +20,9 @@
       "Path": "0_통합본.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "DT_Workitem_Type2_NoExist&Sequence_44",
+        "DT_Workitem_Type1_NoExist&Sequence_44",
+        "DT_Workitem_Exist_2&Flowchart_1",
         "List_Attach_NoExist1&Flowchart_1",
         "List_Attach_NoExist2&Flowchart_1",
         "DT_Workitem_NoExist_2&Flowchart_1",
@@ -109,10 +112,10 @@
         "Array_pdf_text&Sequence_13"
       ],
       "ArgumentsSectionElementsOrder": [
+        "in_out_DT_Workitem_exist",
         "in_pdf",
         "Out_DT_Work_item_Type1",
-        "in_SourceData_Path",
-        "in_out_DT_Workitem"
+        "in_SourceData_Path"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -178,6 +181,7 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
+        "Out_DT_WorkItem_Exist_2",
         "Out_DT_Workitem_NoExist_2",
         "In_Out_DT_Workitem_Type1"
       ],
@@ -194,6 +198,84 @@
       "ArgumentsSectionElementsOrder": [
         "in_DT_Workitem_Type1",
         "in_config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_10_lookup_data_code.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_ISO_Main&Sequence_36",
+        "DT_ISO_numeric&Sequence_36",
+        "DT_ISO_EU&Sequence_36",
+        "Str_numeric&Sequence_37",
+        "Str_continent&Sequence_37",
+        "Str_EU&Sequence_37"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_6-2_Type2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dump_text&Sequence_13",
+        "Array_pdf_text&Sequence_13",
+        "int_cnt&Sequence_13",
+        "str_line21&Sequence_13",
+        "row_split_length&Sequence_13",
+        "row_split&Sequence_13"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_out_DT_Workitem_exist",
+        "in_SourceData_Path",
+        "in_pdf",
+        "Out_DT_Work_item_Type2",
+        "In_Out_DT_Work_item_Type1"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_6-3_Type1_noexist.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "list_col_name&Sequence_18",
+        "dump_text&Sequence_13",
+        "Array_pdf_text&Sequence_13",
+        "int_cnt&Sequence_13",
+        "str_line21&Sequence_13"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_DT_Work_item_Type1_noexist",
+        "in_out_DT_Workitem_noexist",
+        "in_SourceData_Path",
+        "in_pdf"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_6-4_Type2_noexist.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dump_text&Sequence_13",
+        "Array_pdf_text&Sequence_13",
+        "int_cnt&Sequence_13",
+        "str_line21&Sequence_13",
+        "row_split_length&Sequence_13",
+        "row_split&Sequence_13"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Out_DT_Work_item_Type1_NoExist",
+        "Out_DT_Work_item_Type2_NoExist",
+        "in_out_DT_Workitem_NoExist",
+        "in_SourceData_Path",
+        "in_pdf"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
