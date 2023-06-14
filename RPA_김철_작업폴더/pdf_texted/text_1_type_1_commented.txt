@@ -30,5 +30,3 @@
 18 Payment Terms are seven days from receipt of invoice with authorised timesheet
 
 
-----------------------------------------------
-- TO Name에서 TO가 포함되는걸로 보이는데 수정할 것
