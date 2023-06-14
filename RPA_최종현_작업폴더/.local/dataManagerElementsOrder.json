@@ -20,6 +20,13 @@
       "Path": "0_통합본.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "Int_Port&Flowchart_1",
+        "Password&Flowchart_1",
+        "Str_SMTP&Flowchart_1",
+        "Str_To&Flowchart_1",
+        "Str_From&Flowchart_1",
+        "List_Attach_NoExist2&Flowchart_1",
+        "List_Attach_NoExist1&Flowchart_1",
         "DT_Workitem_NoExist_2&Flowchart_1",
         "DT_Workitem_NoExist_1&Flowchart_1",
         "DT_Workitem_Exist&Flowchart_1",
@@ -184,6 +191,22 @@
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
         "in_DT_Workitem_Type1",
+        "in_config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Send_Email.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Int_Port",
+        "in_List_Attach_NoExist2",
+        "in_Str_To",
+        "in_Str_From",
+        "in_Str_SMTP",
+        "in_Password",
         "in_config"
       ],
       "ConstantsSectionElementsOrder": [],
