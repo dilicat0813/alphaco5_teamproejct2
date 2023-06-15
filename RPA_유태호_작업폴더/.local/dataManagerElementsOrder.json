@@ -20,11 +20,22 @@
       "Path": "0_통합본.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "DT_Workitem_Type2&Flowchart_1",
+        "DT_Workitem_Type1&Flowchart_1",
+        "DT_Workitem_Exist&Flowchart_1",
+        "DT_Workitem_NoExist_1&Flowchart_1",
+        "DT_Workitem_NoExist_2&Flowchart_1",
+        "List_Attach_NoExist2&Flowchart_1",
+        "List_Attach_NoExist1&Flowchart_1",
+        "DT_Workitem_Exist_2&Flowchart_1",
+        "DT_Workitem_Type1_NoExist&Flowchart_1",
+        "DT_Workitem_Type2_NoExist&Flowchart_1",
+        "DT_ISO_Main&Flowchart_1",
+        "configpath&Sequence_5",
         "DT_Workitem&Flowchart_1",
         "Str_Password&Flowchart_1",
         "Str_Id&Flowchart_1",
-        "config&Flowchart_1",
-        "configpath&Flowchart_1"
+        "config&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -110,6 +121,74 @@
         "in_SourceData_Path",
         "in_DT_Workitem"
       ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "0_통합본(구).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "configpath&Flowchart_1",
+        "config&Flowchart_1",
+        "Str_Id&Flowchart_1",
+        "Str_Password&Flowchart_1",
+        "List_Attach_NoExist2&Flowchart_1",
+        "List_Attach_NoExist1&Flowchart_1",
+        "DT_Workitem_Type2&Flowchart_1",
+        "DT_Workitem_Type1&Flowchart_1",
+        "DT_Workitem_Exist&Flowchart_1",
+        "DT_Workitem_NoExist_2&Flowchart_1",
+        "DT_Workitem_NoExist_1&Flowchart_1",
+        "DT_Workitem&Flowchart_1",
+        "str_mail_id&Flowchart_1",
+        "str_smpt_address&Flowchart_1",
+        "int_smpt_port&Flowchart_1",
+        "str_receive_mail&Flowchart_1",
+        "str_content&Flowchart_1",
+        "str_title&Flowchart_1",
+        "passol&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "0_통합본_0614_백업.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "config&Flowchart_1",
+        "Str_Password&Flowchart_1",
+        "Str_Id&Flowchart_1",
+        "DT_Workitem&Flowchart_1",
+        "DT_Workitem_Type2&Flowchart_1",
+        "DT_Workitem_Type1&Flowchart_1",
+        "DT_Workitem_Exist&Flowchart_1",
+        "DT_Workitem_NoExist_1&Flowchart_1",
+        "DT_Workitem_NoExist_2&Flowchart_1",
+        "List_Attach_NoExist2&Flowchart_1",
+        "List_Attach_NoExist1&Flowchart_1",
+        "DT_Workitem_Exist_2&Flowchart_1",
+        "DT_ISO_Main&Flowchart_1",
+        "configpath&Sequence_5",
+        "DT_Workitem_Type1_NoExist&Sequence_44",
+        "DT_Workitem_Type2_NoExist&Sequence_44"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_exchange_rate_crawling.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_empty_rate&Sequence_1",
+        "p&Sequence_1",
+        "STR_empty_country&Sequence_1",
+        "STR_CountryName&Sequence_1",
+        "DT_ISO_639&Sequence_1",
+        "DT_exchange_rate&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
