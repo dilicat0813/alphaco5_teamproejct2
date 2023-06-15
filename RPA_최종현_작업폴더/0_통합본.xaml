@@ -128,7 +128,7 @@
       <AssemblyReference>UiPath.System.Activities.Api</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="_0_통합본" sap:VirtualizedContainerService.HintSize="724,3817.5" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="_0_통합본" sap:VirtualizedContainerService.HintSize="644,3817.5" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="config" />
       <Variable x:TypeArguments="ss:SecureString" Name="Str_Password" />
@@ -158,10 +158,10 @@
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        <av:Point x:Key="ShapeLocation">170,-0</av:Point>
+        <av:Point x:Key="ShapeLocation">170,0</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
-        <av:PointCollection x:Key="ConnectorLocation">200,75.2 200,105.2 201,105.2 201,126</av:PointCollection>
-        <x:Double x:Key="Width">690</x:Double>
+        <av:PointCollection x:Key="ConnectorLocation">200,75 200,125</av:PointCollection>
+        <x:Double x:Key="Width">610</x:Double>
         <x:Double x:Key="Height">3780.5</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
@@ -171,12 +171,12 @@
     <FlowStep x:Name="__ReferenceID0">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">101,644</av:Point>
+          <av:Point x:Key="ShapeLocation">101,643</av:Point>
           <av:Size x:Key="ShapeSize">200,159</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">201,803 201,854</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">201,802 201,852</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="//ACME접속 후 &#xA;//DT추출&#xA;//DT필터&#xA;//PDF다운" DisplayName="1. ACME 접속" sap:VirtualizedContainerService.HintSize="450,1372" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence sap2010:Annotation.AnnotationText="//ACME접속 후 &#xA;//DT추출&#xA;//DT필터&#xA;//PDF다운" DisplayName="1. ACME 접속" sap:VirtualizedContainerService.HintSize="200,159" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -234,9 +234,9 @@
         <FlowStep x:Name="__ReferenceID3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">101,854</av:Point>
+              <av:Point x:Key="ShapeLocation">101,852</av:Point>
               <av:Size x:Key="ShapeSize">200,255</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">201,1109.2 201,1159</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">201,1107 201,1157</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Sequence sap2010:Annotation.AnnotationText="// TAX ID Yes/ &quot;&quot;&#xA;// PDF Type 입력 (Type 1, 2)&#xA;// Tax ID 있음 --&gt; &#xA;DT_Workitem_Exist&#xA;// Tax ID 없음 --&gt; DT_Workitem_NoExist_1 &#xA;pdf TaxID X&#xA;&#xA;DT현황: DT_workitem을 exist, noexist 2개로 뜯음" DisplayName="2. PDF 분류하기" sap:VirtualizedContainerService.HintSize="200,255" sap2010:WorkflowViewState.IdRef="Sequence_8">
@@ -261,9 +261,9 @@
             <FlowStep x:Name="__ReferenceID4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">101,1159</av:Point>
+                  <av:Point x:Key="ShapeLocation">101,1157</av:Point>
                   <av:Size x:Key="ShapeSize">200,223</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">201,1382.2 201,1432</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">201,1380 201,1430</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <Sequence sap2010:Annotation.AnnotationText="//Type1, 2 개별 파일 불러옴&#xA;// 파일 텍스트 추출&#xA;// 해당라인 텍스트 추출&#xA;// Type2 미완성&#xA;&#xA;DT_Exist --&gt; Type1, Type2로 분리 --&gt; 분리후 재병합 (Type1 = Exist)" DisplayName="3. Tax ID 있는 pdf 종류별 작업" sap:VirtualizedContainerService.HintSize="200,223" sap2010:WorkflowViewState.IdRef="Sequence_10">
@@ -330,9 +330,9 @@
                 <FlowStep x:Name="__ReferenceID5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">101,1432</av:Point>
+                      <av:Point x:Key="ShapeLocation">101,1430</av:Point>
                       <av:Size x:Key="ShapeSize">200,143</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">201,1575.2 201,1625</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">201,1573 201,1623</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Sequence sap2010:Annotation.AnnotationText="//벤더 서치로 이동&#xA;//taxid입력, 존재여부 확인&#xA;//DT_Type1(Exist) 사용중" DisplayName="4. vendors-search-이동" sap:VirtualizedContainerService.HintSize="200,143" sap2010:WorkflowViewState.IdRef="Sequence_16">
@@ -369,9 +369,9 @@
                     <FlowStep x:Name="__ReferenceID6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">101,1625</av:Point>
+                          <av:Point x:Key="ShapeLocation">101,1623</av:Point>
                           <av:Size x:Key="ShapeSize">200,255</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">201,1880.2 201,1930</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">201,1878 201,1928</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <Sequence sap2010:Annotation.AnnotationText="//존재여부(O,X)에 따라 데이터테이블 분리&#xA;// 미존재 &#xA;DT_workitem_noexist_2&#xA;pdf TaxIDO, vendor X&#xA;//존재&#xA;DT_workitem_Exist_2&#xA;&#xA;//둘 합은 DT_workitem_Type1" DisplayName="5. Filter_data_table(Vendor ID 존재여부)" sap:VirtualizedContainerService.HintSize="200,255" sap2010:WorkflowViewState.IdRef="Sequence_20">
@@ -393,9 +393,9 @@
                         <FlowStep x:Name="__ReferenceID7">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:Point x:Key="ShapeLocation">101,1930</av:Point>
+                              <av:Point x:Key="ShapeLocation">101,1928</av:Point>
                               <av:Size x:Key="ShapeSize">200,175</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">201,2105 201,2125</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">201,2103 201,2153</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <Sequence sap2010:Annotation.AnnotationText="// O인 (Add invoice Detail) 데이터 입력&#xA;//정상작동 확인 완료&#xA;//DT_Exist2 사용, 데이터 추가 없음" DisplayName="6. Add Invoice Detail 입력" sap:VirtualizedContainerService.HintSize="200,175" sap2010:WorkflowViewState.IdRef="Sequence_25">
@@ -416,9 +416,9 @@
                             <FlowStep x:Name="__ReferenceID9">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <av:Point x:Key="ShapeLocation">101,2125</av:Point>
+                                  <av:Point x:Key="ShapeLocation">101,2153</av:Point>
                                   <av:Size x:Key="ShapeSize">200,207</av:Size>
-                                  <av:PointCollection x:Key="ConnectorLocation">201,2332 201,2362</av:PointCollection>
+                                  <av:PointCollection x:Key="ConnectorLocation">201,2360 201,2410</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <Sequence sap2010:Annotation.AnnotationText="// 분리된 세 시트를 하나의 DT로 통합&#xA;// 통합한 것을 조사할 시트와 Vlookup시켜서 원하는 대상만 가져오도록&#xA;// 러시아는 러시아연방인데..?" DisplayName="7. Lookup 국가 코드" sap:VirtualizedContainerService.HintSize="200,207" sap2010:WorkflowViewState.IdRef="Sequence_40">
@@ -439,9 +439,9 @@
                                 <FlowStep x:Name="__ReferenceID10">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <av:Point x:Key="ShapeLocation">101,2362</av:Point>
+                                      <av:Point x:Key="ShapeLocation">101,2410</av:Point>
                                       <av:Size x:Key="ShapeSize">200,114</av:Size>
-                                      <av:PointCollection x:Key="ConnectorLocation">201,2476 201,2497</av:PointCollection>
+                                      <av:PointCollection x:Key="ConnectorLocation">201,2524 201,2574</av:PointCollection>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <Sequence sap2010:Annotation.AnnotationText="" DisplayName="8. 사용 데이터 테이블 통합" sap:VirtualizedContainerService.HintSize="200,114" sap2010:WorkflowViewState.IdRef="Sequence_42">
@@ -458,9 +458,9 @@
                                     <FlowStep x:Name="__ReferenceID15">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <av:Point x:Key="ShapeLocation">101,2497</av:Point>
+                                          <av:Point x:Key="ShapeLocation">101,2574</av:Point>
                                           <av:Size x:Key="ShapeSize">200,114</av:Size>
-                                          <av:PointCollection x:Key="ConnectorLocation">201,2611 201,2641</av:PointCollection>
+                                          <av:PointCollection x:Key="ConnectorLocation">201,2688 201,2738</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <Sequence sap2010:Annotation.AnnotationText="//ACME Workitem Update" DisplayName="Update_Workitem" sap:VirtualizedContainerService.HintSize="200,114" sap2010:WorkflowViewState.IdRef="Sequence_56">
@@ -483,9 +483,9 @@
                                         <FlowStep x:Name="__ReferenceID8">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <av:Point x:Key="ShapeLocation">101,2641</av:Point>
+                                              <av:Point x:Key="ShapeLocation">101,2738</av:Point>
                                               <av:Size x:Key="ShapeSize">200,114</av:Size>
-                                              <av:PointCollection x:Key="ConnectorLocation">201,2755 201,2792</av:PointCollection>
+                                              <av:PointCollection x:Key="ConnectorLocation">201,2852 201,2902</av:PointCollection>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                           <Sequence sap2010:Annotation.AnnotationText="" DisplayName="9. 전체데이터시트에 ISO  Vlookup" sap:VirtualizedContainerService.HintSize="200,114" sap2010:WorkflowViewState.IdRef="Sequence_33">
@@ -508,9 +508,9 @@
                                             <FlowStep x:Name="__ReferenceID11">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <av:Point x:Key="ShapeLocation">101,2792</av:Point>
+                                                  <av:Point x:Key="ShapeLocation">101,2902</av:Point>
                                                   <av:Size x:Key="ShapeSize">200,114</av:Size>
-                                                  <av:PointCollection x:Key="ConnectorLocation">201,2906 201,2936</av:PointCollection>
+                                                  <av:PointCollection x:Key="ConnectorLocation">201,3016 201,3066</av:PointCollection>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                               <Sequence sap2010:Annotation.AnnotationText="//엑셀 작업 완료" DisplayName="10-1. 엑셀1(김철, 민경환)" sap:VirtualizedContainerService.HintSize="200,114" sap2010:WorkflowViewState.IdRef="Sequence_52">
@@ -531,9 +531,9 @@
                                                 <FlowStep x:Name="__ReferenceID12">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <av:Point x:Key="ShapeLocation">101,2936</av:Point>
+                                                      <av:Point x:Key="ShapeLocation">101,3066</av:Point>
                                                       <av:Size x:Key="ShapeSize">200,114</av:Size>
-                                                      <av:PointCollection x:Key="ConnectorLocation">201,3050 201,3070</av:PointCollection>
+                                                      <av:PointCollection x:Key="ConnectorLocation">201,3180 201,3230</av:PointCollection>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                   <Sequence sap2010:Annotation.AnnotationText="//엑셀작업 완료" DisplayName="10-2. 엑셀2(민경환)" sap:VirtualizedContainerService.HintSize="200,114" sap2010:WorkflowViewState.IdRef="Sequence_53">
@@ -554,22 +554,26 @@
                                                     <FlowStep x:Name="__ReferenceID13">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                          <av:Point x:Key="ShapeLocation">101,3070</av:Point>
+                                                          <av:Point x:Key="ShapeLocation">101,3230</av:Point>
                                                           <av:Size x:Key="ShapeSize">200,114</av:Size>
-                                                          <av:PointCollection x:Key="ConnectorLocation">201,3184 201,3224</av:PointCollection>
+                                                          <av:PointCollection x:Key="ConnectorLocation">201,3344 201,3394</av:PointCollection>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <Sequence sap2010:Annotation.AnnotationText="" DisplayName="10-3. 엑셀3(유태호/최종현)" sap:VirtualizedContainerService.HintSize="200,114" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                      <Sequence sap2010:Annotation.AnnotationText="//엑셀작업(환율추가 필요)" DisplayName="10-3-2. 엑셀3(유태호/최종현)" sap:VirtualizedContainerService.HintSize="450,256" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_12-2_excel_write_2 - 복사 (1).xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_30" UnSafe="False" WorkflowFileName="invoke\invoke_12-2_excel_write_2 - 복사 (1).xaml">
+                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_12-3_excel_write_3.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_30" UnSafe="False" WorkflowFileName="invoke\invoke_12-3_excel_write_3.xaml">
                                                           <ui:InvokeWorkflowFile.Arguments>
-                                                            <InArgument x:TypeArguments="sd:DataTable" x:Key="In_DT_Workitem_Type1">[DT_Workitem_Type1]</InArgument>
-                                                            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="In_config">[config]</InArgument>
+                                                            <InArgument x:TypeArguments="sd:DataTable" x:Key="In_DT_Workitem_Type1">
+                                                              <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type1" />
+                                                            </InArgument>
+                                                            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="In_config">
+                                                              <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="config" />
+                                                            </InArgument>
                                                           </ui:InvokeWorkflowFile.Arguments>
                                                         </ui:InvokeWorkflowFile>
                                                       </Sequence>
@@ -577,19 +581,18 @@
                                                         <FlowStep x:Name="__ReferenceID14">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <av:Point x:Key="ShapeLocation">101,3224</av:Point>
+                                                              <av:Point x:Key="ShapeLocation">101,3394</av:Point>
                                                               <av:Size x:Key="ShapeSize">200,127</av:Size>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <Sequence sap2010:Annotation.AnnotationText="//SMTP 활용 첨부 파일 업을시 메일 미발송" DisplayName="Send_Email" sap:VirtualizedContainerService.HintSize="496,1208" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                                          <Sequence sap2010:Annotation.AnnotationText="//SMTP 활용 첨부 파일 업을시 메일 미발송" DisplayName="Send_Email" sap:VirtualizedContainerService.HintSize="200,127" sap2010:WorkflowViewState.IdRef="Sequence_55">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,94" sap2010:WorkflowViewState.IdRef="LogMessage_17" Message="[&quot;Email 발송 시작&quot;]" />
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_23">
+                                                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_23">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="x:String">[Str_To]</OutArgument>
                                                               </Assign.To>
@@ -597,7 +600,7 @@
                                                                 <InArgument x:TypeArguments="x:String">whdrk9050@gmail.com</InArgument>
                                                               </Assign.Value>
                                                             </Assign>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_24">
+                                                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_24">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="x:String">[Str_From]</OutArgument>
                                                               </Assign.To>
@@ -606,7 +609,7 @@
                                                               </Assign.Value>
                                                             </Assign>
                                                             <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABfLr/BJaRUyatzOpf/zM5gAAAAACAAAAAAAQZgAAAAEAACAAAAC2QsZ08+U1xBbPvJMEsR7WuDaSktOj/02/6gW57ab19AAAAAAOgAAAAAIAACAAAADMCzinUisbsMhLUxOmo3+kz0fyrBmVeBF0UG89r6YmrhAAAADFeRopH8akJ18kS4KTd/BqQAAAALDp3qtE21/BjR3lzLdn68HsJf7o7iQEmqReECyRoEwR24LoMp3izsB/mFwAe8pQ/B3sTzbXBuJW90BpsM9FCcI=" Result="[Password]" />
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_25">
+                                                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_25">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="x:String">[Str_SMTP]</OutArgument>
                                                               </Assign.To>
@@ -614,7 +617,7 @@
                                                                 <InArgument x:TypeArguments="x:String">SMTP.naver.com</InArgument>
                                                               </Assign.Value>
                                                             </Assign>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_26">
+                                                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_26">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="x:Int32">[Int_Port]</OutArgument>
                                                               </Assign.To>
@@ -634,7 +637,6 @@
                                                                 <InArgument x:TypeArguments="x:Int32" x:Key="in_Int_Port">[Int_Port]</InArgument>
                                                               </ui:InvokeWorkflowFile.Arguments>
                                                             </ui:InvokeWorkflowFile>
-                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,94" sap2010:WorkflowViewState.IdRef="LogMessage_18" Message="[&quot;Email 발송 완료&quot;]" />
                                                             <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="Delay_2" />
                                                           </Sequence>
                                                         </FlowStep>
@@ -667,9 +669,9 @@
     <FlowStep x:Name="__ReferenceID1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">101,313</av:Point>
+          <av:Point x:Key="ShapeLocation">100,302</av:Point>
           <av:Size x:Key="ShapeSize">200,114</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">201,427 201,467</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">201,416 201,466</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Sequence sap2010:Annotation.AnnotationText="//config.xlsx 불러오기" DisplayName="config" sap:VirtualizedContainerService.HintSize="200,114" sap2010:WorkflowViewState.IdRef="Sequence_5">
@@ -710,9 +712,9 @@
         <FlowStep x:Name="__ReferenceID2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">101,467</av:Point>
+              <av:Point x:Key="ShapeLocation">101,466</av:Point>
               <av:Size x:Key="ShapeSize">200,127</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">201,594 201,644</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">201,593 201,643</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Sequence sap2010:Annotation.AnnotationText="//계정, 데이터테이블 불러오기" DisplayName="assign" sap:VirtualizedContainerService.HintSize="200,127" sap2010:WorkflowViewState.IdRef="Sequence_7">
@@ -805,9 +807,9 @@
     <FlowStep x:Name="__ReferenceID18">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">101,126</av:Point>
+          <av:Point x:Key="ShapeLocation">100,125</av:Point>
           <av:Size x:Key="ShapeSize">200,127</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">201,253 201,313</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">200,252 200,282 201,282 201,302</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Sequence sap2010:Annotation.AnnotationText="//크롬, 엑셀 낄-&#xA;" DisplayName="KILL" sap:VirtualizedContainerService.HintSize="200,127" sap2010:WorkflowViewState.IdRef="Sequence_6">
