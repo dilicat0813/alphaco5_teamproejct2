@@ -5,7 +5,7 @@
     <x:Property Name="in_work_items" Type="InArgument(x:String)" />
     <x:Property Name="in_SourceData_Path" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1234,2939</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,2775</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -120,7 +120,7 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="808,2874" sap2010:WorkflowViewState.IdRef="Sequence_16">
+  <Sequence sap:VirtualizedContainerService.HintSize="808,2710" sap2010:WorkflowViewState.IdRef="Sequence_16">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="path_workitem_WIID" />
       <Variable x:TypeArguments="x:String" Name="get_texid" />
@@ -130,7 +130,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="WI1, Open, ClientID, Account data 추출" sap:VirtualizedContainerService.HintSize="746,2763" sap2010:WorkflowViewState.IdRef="Sequence_15">
+    <Sequence sap2010:Annotation.AnnotationText="" DisplayName="WI1, Open, ClientID, Account data 추출" sap:VirtualizedContainerService.HintSize="746,2599" sap2010:WorkflowViewState.IdRef="Sequence_15">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -138,13 +138,13 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="684,2621" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="aa14b2e9377ecb9ebb8af0bd75befa45" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;">
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="684,2457" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="aa14b2e9377ecb9ebb8af0bd75befa45" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;">
         <ui:BrowserScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="650,2474" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="650,2310" sap2010:WorkflowViewState.IdRef="Sequence_11">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Int32" Name="cnt_idx" />
               </Sequence.Variables>
@@ -154,13 +154,13 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ForEachRow ColumnNames="{x:Null}" sap2010:Annotation.AnnotationText="" CurrentIndex="[cnt_idx]" DataTable="[inout_TD_Workitem]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="588,2363" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow ColumnNames="{x:Null}" sap2010:Annotation.AnnotationText="" CurrentIndex="[cnt_idx]" DataTable="[inout_TD_Workitem]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="588,2199" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="554,2217" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="554,2053" sap2010:WorkflowViewState.IdRef="Sequence_14">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="Str_text1" />
                         <Variable x:TypeArguments="x:String" Name="Str_text2" />
@@ -180,36 +180,7 @@
                         </Assign.Value>
                       </Assign>
                       <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="492,85" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="[path_workitem_WIID]" />
-                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'P'" sap:VirtualizedContainerService.HintSize="492,107" sap2010:WorkflowViewState.IdRef="GetValue_1">
-                        <ui:GetValue.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="852212c5-0d17-4630-b36e-57a64a6a11a4" InformativeScreenshot="dd7e6339050f65ced0d06e58c1617d40" Selector="&lt;webctrl tag='P' /&gt;">
-                            <ui:Target.TimeoutMS>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:Target.TimeoutMS>
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
-                          </ui:Target>
-                        </ui:GetValue.Target>
-                        <ui:GetValue.Value>
-                          <OutArgument x:TypeArguments="x:String">[Str_text1]</OutArgument>
-                        </ui:GetValue.Value>
-                      </ui:GetValue>
-                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'P'" sap:VirtualizedContainerService.HintSize="492,107" sap2010:WorkflowViewState.IdRef="GetValue_2">
-                        <ui:GetValue.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="852212c5-0d17-4630-b36e-57a64a6a11a4" InformativeScreenshot="065bc92f2ddb80536d12ae2ab18b2e92" Selector="&lt;webctrl idx='3' tag='P' /&gt;">
-                            <ui:Target.TimeoutMS>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:Target.TimeoutMS>
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
-                          </ui:Target>
-                        </ui:GetValue.Target>
-                        <ui:GetValue.Value>
-                          <OutArgument x:TypeArguments="x:String">[Str_text2]</OutArgument>
-                        </ui:GetValue.Value>
-                      </ui:GetValue>
+                      <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="492,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
                       <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,965" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="5" RetryInterval="00:00:10">
                         <ui:RetryScope.ActivityBody>
                           <ActivityAction>

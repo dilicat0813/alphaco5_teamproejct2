@@ -4,7 +4,7 @@
     <x:Property Name="In_config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="In_DT_ISO_Main" Type="InArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1234,3634</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,4641</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -118,7 +118,7 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="730,3569" sap2010:WorkflowViewState.IdRef="Sequence_66">
+  <Sequence sap:VirtualizedContainerService.HintSize="730,4576" sap2010:WorkflowViewState.IdRef="Sequence_66">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="DT_Workitem_Exist" />
     </Sequence.Variables>
@@ -167,7 +167,7 @@
         </ui:ForEachRow.Body>
       </ui:ForEachRow>
     </Sequence>
-    <Sequence sap:VirtualizedContainerService.HintSize="668,1688" sap2010:WorkflowViewState.IdRef="Sequence_64">
+    <Sequence sap:VirtualizedContainerService.HintSize="668,2695" sap2010:WorkflowViewState.IdRef="Sequence_64">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="Int_cnt_0" />
       </Sequence.Variables>
@@ -266,7 +266,7 @@
           </scg:List>
         </ui:FilterDataTable.SelectColumns>
       </ui:FilterDataTable>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_Workitem_Exist]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="606,52" sap2010:WorkflowViewState.IdRef="ForEachRow_9">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_Workitem_Exist]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="606,1059" sap2010:WorkflowViewState.IdRef="ForEachRow_9">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
@@ -321,7 +321,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("unitprice")]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:Object">["￦"+str(dbl_unitprice*cdbl(CurrentRow("환율")))]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[(dbl_unitprice*cdbl(CurrentRow("환율"))).ToString("F2")]</InArgument>
                       </Assign.Value>
                     </Assign>
                     <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_40">
@@ -329,7 +329,7 @@
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("total")]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:Object">["￦"+str(dbl_total*cdbl(CurrentRow("환율")))]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[(dbl_total*cdbl(CurrentRow("환율"))).ToString("F2")]</InArgument>
                       </Assign.Value>
                     </Assign>
                   </Sequence>
@@ -340,7 +340,7 @@
         </ui:ForEachRow.Body>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
