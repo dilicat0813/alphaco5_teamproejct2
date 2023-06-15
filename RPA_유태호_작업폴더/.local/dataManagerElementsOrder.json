@@ -181,14 +181,143 @@
       "Path": "invoke/invoke_exchange_rate_crawling.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "DT_ISO_Main_Exchange_Rate_Empty&Sequence_1",
+        "STR_Exchange_Rate&Sequence_1",
+        "str_money&Sequence_1",
+        "str_country&Sequence_1",
         "str_empty_rate&Sequence_1",
-        "p&Sequence_1",
         "STR_empty_country&Sequence_1",
         "STR_CountryName&Sequence_1",
         "DT_ISO_639&Sequence_1",
         "DT_exchange_rate&Sequence_1"
       ],
+      "ArgumentsSectionElementsOrder": [
+        "in_DT_ISO_Main",
+        "in_config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "통합번 구버전 모음/0_통합본(구)2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "config&Flowchart_1",
+        "Str_Password&Flowchart_1",
+        "Str_Id&Flowchart_1",
+        "DT_Workitem&Flowchart_1",
+        "DT_Workitem_Type2&Flowchart_1",
+        "DT_Workitem_Type1&Flowchart_1",
+        "DT_Workitem_Exist&Flowchart_1",
+        "DT_Workitem_NoExist_1&Flowchart_1",
+        "DT_Workitem_NoExist_2&Flowchart_1",
+        "List_Attach_NoExist2&Flowchart_1",
+        "List_Attach_NoExist1&Flowchart_1",
+        "DT_Workitem_Exist_2&Flowchart_1",
+        "DT_Workitem_Type1_NoExist&Flowchart_1",
+        "DT_Workitem_Type2_NoExist&Flowchart_1",
+        "DT_ISO_Main&Flowchart_1",
+        "configpath&Sequence_5"
+      ],
       "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_11_lookup_iso_and_main_dt.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "list_col_name&Sequence_47",
+        "Str_Iso_alpha2&Sequence_45",
+        "Str_ISO_Numeric&Sequence_45",
+        "Str_ISO_EU&Sequence_45"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_Out_DT_Workitem_Type1",
+        "in_DT_ISO_Main"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_12-2_excel_write_2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_Workitem_Exist&Sequence_66",
+        "Int_cnt_0&Sequence_64"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_DT_Workitem_Type1",
+        "In_config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_10_lookup_data_code.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_ISO_numeric&Sequence_36",
+        "DT_ISO_EU&Sequence_36",
+        "Str_numeric&Sequence_37",
+        "Str_Country_name_kor&Sequence_37",
+        "Str_EU&Sequence_37"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_config",
+        "out_DT_ISO_Main"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_12-1_excel_write_1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_Workitem_Exist&Sequence_58"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_DT_Workitem_Type1",
+        "In_config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_04.Type=WI3Status=open.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "path_workitem_WIID&Sequence_16",
+        "get_texid&Sequence_16",
+        "cnt_idx&Sequence_11",
+        "Str_text1&Sequence_14",
+        "Str_text2&Sequence_14"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_config",
+        "inout_TD_Workitem",
+        "in_System1_URL",
+        "in_work_items",
+        "in_SourceData_Path"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_05_PDF파일분류.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dump_text&Sequence_9",
+        "Array_pdf_text&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_out_DT_Workitem",
+        "in_SourceData_Path",
+        "in_pdf",
+        "out_DT_WorkItem_Exist",
+        "out_DT_WorkItem_NoExist",
+        "In_List_attach_1"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
