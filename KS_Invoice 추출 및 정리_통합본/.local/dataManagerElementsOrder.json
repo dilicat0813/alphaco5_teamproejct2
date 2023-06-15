@@ -11,7 +11,10 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "text_test&Sequence_2",
+        "text&Sequence_2"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -20,6 +23,20 @@
       "Path": "0_통합본.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "str_dump_1&Sequence_87",
+        "str_exchange_v&Sequence_78",
+        "DT_C1&Sequence_54",
+        "DT_C7&Sequence_68",
+        "DT_C6&Sequence_68",
+        "DT_C5&Sequence_68",
+        "DT_C4&Sequence_68",
+        "DT_C3&Sequence_68",
+        "DT_C2&Sequence_68",
+        "DT_ISO_Main_Empty&Flowchart_1",
+        "DT_ISO&Flowchart_1",
+        "DT_ISO_EU&Flowchart_1",
+        "dump_value&Sequence_57",
+        "DT_Exchange&Flowchart_1",
         "DT_ISO_Main&Flowchart_1",
         "DT_Workitem_Type1_NoExist&Flowchart_1",
         "DT_Workitem_Type2_NoExist&Flowchart_1",
