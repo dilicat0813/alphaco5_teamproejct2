@@ -12,7 +12,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>440,328</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,672</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>invoke_Dt_Workitem_NoExist_1_작업_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -93,18 +93,45 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
       <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="invoke_Dt_Workitem_NoExist_1_작업" sap:VirtualizedContainerService.HintSize="450,263" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="invoke_Dt_Workitem_NoExist_1_작업" sap:VirtualizedContainerService.HintSize="472,607" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentsCollection="[In_List_attach_1]" Body="[in_str_content]" DisplayName="Send SMTP Mail Message" Email="[in_str_mail_id]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="388,152" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="[in_passol]" Port="[in_int_smpt_port]" SecureConnection="Auto" Server="[in_str_smpt_address]" Subject="[in_str_title]" To="[in_str_receive_mail]">
-      <ui:SendMail.Files>
-        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
-      </ui:SendMail.Files>
-    </ui:SendMail>
+    <If Condition="[In_List_attach_1.Count = 0]" sap:VirtualizedContainerService.HintSize="410,496" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="376,234" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentsCollection="[In_List_attach_1]" Body="[in_str_content]" DisplayName="Send SMTP Mail Message" Email="[in_str_mail_id]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,146" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" Password="[in_passol]" Port="[in_int_smpt_port]" SecureConnection="Auto" Server="[in_str_smpt_address]" Subject="[in_str_title]" To="[in_str_receive_mail]">
+            <ui:SendMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+            </ui:SendMail.Files>
+          </ui:SendMail>
+        </Sequence>
+      </If.Else>
+    </If>
   </Sequence>
 </Activity>

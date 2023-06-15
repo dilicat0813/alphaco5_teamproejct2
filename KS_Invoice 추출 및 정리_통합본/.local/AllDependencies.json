@@ -21794,15 +21794,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\mkh08\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "KS_Invoice 추출 및 정리_통합본",
       "projectName": "KS_Invoice 추출 및 정리_통합본",
-      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\lecture2\\alphaco5_teamproejct2\\KS_Invoice 추출 및 정리_통합본\\.local",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\lecture2\\alphaco5_teamproejct2\\KS_Invoice 추출 및 정리_통합본\\.local"
+      "projectPath": "C:\\Users\\mkh08\\OneDrive\\문서\\uipath\\alphaco5_teamproject2\\alphaco5_teamproejct2\\KS_Invoice 추출 및 정리_통합본\\.local",
+      "packagesPath": "C:\\Users\\mkh08\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mkh08\\OneDrive\\문서\\uipath\\alphaco5_teamproject2\\alphaco5_teamproejct2\\KS_Invoice 추출 및 정리_통합본\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -21843,7 +21843,7 @@
             "version": "[23.4.6, 23.4.6]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\user\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\mkh08\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {

@@ -3,7 +3,7 @@
     <x:Property Name="In_Out_DT_Workitem_Type1" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="in_DT_ISO_Main" Type="InArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1234,2851</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,2846</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -114,13 +114,13 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="668,2786" sap2010:WorkflowViewState.IdRef="Sequence_52">
+  <Sequence sap:VirtualizedContainerService.HintSize="668,2781" sap2010:WorkflowViewState.IdRef="Sequence_52">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="add data columns" sap:VirtualizedContainerService.HintSize="606,693" sap2010:WorkflowViewState.IdRef="Sequence_47">
+    <Sequence DisplayName="add data columns" sap:VirtualizedContainerService.HintSize="606,692" sap2010:WorkflowViewState.IdRef="Sequence_47">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:String[]" Name="list_col_name" />
       </Sequence.Variables>
@@ -130,7 +130,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_24">
+      <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_24">
         <Assign.To>
           <OutArgument x:TypeArguments="s:String[]">[list_col_name]</OutArgument>
         </Assign.To>
@@ -156,17 +156,17 @@
         </ui:ForEach.Body>
       </ui:ForEach>
     </Sequence>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[In_Out_DT_Workitem_Type1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="606,1942" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[In_Out_DT_Workitem_Type1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="606,1938" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="572,1825" sap2010:WorkflowViewState.IdRef="Sequence_45">
+          <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="572,1822" sap2010:WorkflowViewState.IdRef="Sequence_45">
             <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="Str_Iso_alpha2" />
-              <Variable x:TypeArguments="x:String" Name="Str_ISO_Numeric" />
-              <Variable x:TypeArguments="x:String" Name="Str_ISO_EU" />
+              <Variable x:TypeArguments="x:Object" Name="Str_Iso_alpha2" />
+              <Variable x:TypeArguments="x:Object" Name="Str_ISO_Numeric" />
+              <Variable x:TypeArguments="x:Object" Name="Str_ISO_EU" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -175,10 +175,10 @@
             </sap:WorkflowViewStateService.ViewState>
             <ui:LookupDataTable LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnIndex="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[in_DT_ISO_Main]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="510,292" sap2010:WorkflowViewState.IdRef="LookupDataTable_1" LookupColumnName="Country" LookupValue="[CurrentRow(&quot;City_Country&quot;).ToString.split(&quot;,&quot;)(1).ToString.Trim()]" TargetColumnName="Alpha-2 code">
               <ui:LookupDataTable.CellValue>
-                <OutArgument x:TypeArguments="x:String">[Str_Iso_alpha2]</OutArgument>
+                <OutArgument x:TypeArguments="x:Object">[Str_Iso_alpha2]</OutArgument>
               </ui:LookupDataTable.CellValue>
             </ui:LookupDataTable>
-            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_23">
+            <Assign sap:VirtualizedContainerService.HintSize="510,81" sap2010:WorkflowViewState.IdRef="Assign_23">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("to_countrycode")]</OutArgument>
               </Assign.To>
@@ -188,10 +188,10 @@
             </Assign>
             <ui:LookupDataTable LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnIndex="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[in_DT_ISO_Main]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="510,292" sap2010:WorkflowViewState.IdRef="LookupDataTable_4" LookupColumnName="Country" LookupValue="[CurrentRow(&quot;City_Country&quot;).ToString.split(&quot;,&quot;)(1).ToString.Trim()]" TargetColumnName="Numeric">
               <ui:LookupDataTable.CellValue>
-                <OutArgument x:TypeArguments="x:String">[Str_ISO_Numeric]</OutArgument>
+                <OutArgument x:TypeArguments="x:Object">[Str_ISO_Numeric]</OutArgument>
               </ui:LookupDataTable.CellValue>
             </ui:LookupDataTable>
-            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_25">
+            <Assign sap:VirtualizedContainerService.HintSize="510,81" sap2010:WorkflowViewState.IdRef="Assign_25">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("Numeric Code")]</OutArgument>
               </Assign.To>
@@ -201,10 +201,10 @@
             </Assign>
             <ui:LookupDataTable LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnIndex="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[in_DT_ISO_Main]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="510,292" sap2010:WorkflowViewState.IdRef="LookupDataTable_5" LookupColumnName="Country" LookupValue="[CurrentRow(&quot;City_Country&quot;).ToString.split(&quot;,&quot;)(1).ToString.Trim()]" TargetColumnName="EU_Check">
               <ui:LookupDataTable.CellValue>
-                <OutArgument x:TypeArguments="x:String">[Str_ISO_EU]</OutArgument>
+                <OutArgument x:TypeArguments="x:Object">[Str_ISO_EU]</OutArgument>
               </ui:LookupDataTable.CellValue>
             </ui:LookupDataTable>
-            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_26">
+            <Assign sap:VirtualizedContainerService.HintSize="510,81" sap2010:WorkflowViewState.IdRef="Assign_26">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("Remark")]</OutArgument>
               </Assign.To>
