@@ -3,7 +3,7 @@
     <x:Property Name="in_config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="out_DT_ISO_Main" Type="OutArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1218,3146</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>677.6,3167.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -113,19 +113,19 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="688,3081" sap2010:WorkflowViewState.IdRef="Sequence_38">
+  <Sequence sap:VirtualizedContainerService.HintSize="688,3102.4" sap2010:WorkflowViewState.IdRef="Sequence_38">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="626,2970" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="[in_config(&quot;ISO_Code&quot;).ToString]">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="625.6,2990.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="[in_config(&quot;ISO_Code&quot;).ToString]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="592,2860" sap2010:WorkflowViewState.IdRef="Sequence_36">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="592,2880.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="DT_ISO_numeric" />
               <Variable x:TypeArguments="sd:DataTable" Name="DT_ISO_EU" />
@@ -135,22 +135,22 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ExcelReadRange AddHeaders="True" DataTable="[out_DT_ISO_Main]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="530,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_4" Range="B4" SheetName="ISO-3166-alpha2" />
-            <ui:ExcelReadRange AddHeaders="True" DataTable="[DT_ISO_numeric]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="530,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_5" Range="B4" SheetName="ISO-3166" />
-            <ui:ExcelReadRange AddHeaders="True" DataTable="[DT_ISO_EU]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="530,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_6" Range="B4" SheetName="ISO-639-KR" />
-            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Numeric" DataTable="[out_DT_ISO_Main]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
-            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Continent" DataTable="[out_DT_ISO_Main]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_5" />
-            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="EU_Check" DataTable="[out_DT_ISO_Main]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_6" />
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[out_DT_ISO_Main]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,1590" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+            <ui:ExcelReadRange AddHeaders="True" DataTable="[out_DT_ISO_Main]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="529.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_4" Range="B4" SheetName="ISO-3166-alpha2" />
+            <ui:ExcelReadRange AddHeaders="True" DataTable="[DT_ISO_numeric]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="529.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_5" Range="B4" SheetName="ISO-3166" />
+            <ui:ExcelReadRange AddHeaders="True" DataTable="[DT_ISO_EU]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="529.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_6" Range="B4" SheetName="ISO-639-KR" />
+            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Numeric" DataTable="[out_DT_ISO_Main]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="529.6,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
+            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Country_Name_Kor" DataTable="[out_DT_ISO_Main]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="529.6,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_5" />
+            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="EU_Check" DataTable="[out_DT_ISO_Main]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="529.6,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_6" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[out_DT_ISO_Main]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="529.6,1602.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,1475" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,1486.4" sap2010:WorkflowViewState.IdRef="Sequence_37">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="Str_numeric" />
-                      <Variable x:TypeArguments="x:String" Name="Str_continent" />
+                      <Variable x:TypeArguments="x:String" Name="Str_Country_name_kor" />
                       <Variable x:TypeArguments="x:Object" Name="Str_EU" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
@@ -158,7 +158,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LookupDataTable LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnIndex="{x:Null}" TargetDataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Numeric get&#xA;" DataTable="[DT_ISO_numeric]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="434,334" sap2010:WorkflowViewState.IdRef="LookupDataTable_5" LookupColumnName="COUNTRY" LookupValue="[CurrentRow(&quot;Country&quot;).ToString]" TargetColumnName="Numeric">
+                    <ui:LookupDataTable LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnIndex="{x:Null}" TargetDataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Numeric get&#xA;" DataTable="[DT_ISO_numeric]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="433.6,339.2" sap2010:WorkflowViewState.IdRef="LookupDataTable_5" LookupColumnName="COUNTRY" LookupValue="[CurrentRow(&quot;Country&quot;).ToString]" TargetColumnName="Numeric">
                       <ui:LookupDataTable.CellValue>
                         <OutArgument x:TypeArguments="x:String">[Str_numeric]</OutArgument>
                       </ui:LookupDataTable.CellValue>
@@ -168,17 +168,17 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LookupDataTable>
-                    <ui:LookupDataTable LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnIndex="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[DT_ISO_EU]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="434,292" sap2010:WorkflowViewState.IdRef="LookupDataTable_6" LookupColumnName="Code" LookupValue="[CurrentRow(&quot;Alpha-2 code&quot;).ToString]" TargetColumnName="Continents">
+                    <ui:LookupDataTable LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnIndex="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[DT_ISO_EU]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="433.6,295.2" sap2010:WorkflowViewState.IdRef="LookupDataTable_6" LookupColumnName="Code" LookupValue="[CurrentRow(&quot;Alpha-2 code&quot;).ToString]" TargetColumnName="CountryName">
                       <ui:LookupDataTable.CellValue>
-                        <OutArgument x:TypeArguments="x:String">[Str_continent]</OutArgument>
+                        <OutArgument x:TypeArguments="x:String">[Str_Country_name_kor]</OutArgument>
                       </ui:LookupDataTable.CellValue>
                     </ui:LookupDataTable>
-                    <ui:LookupDataTable LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnIndex="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[DT_ISO_EU]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="434,292" sap2010:WorkflowViewState.IdRef="LookupDataTable_7" LookupColumnName="Code" LookupValue="[CurrentRow(&quot;Alpha-2 code&quot;).ToString]" TargetColumnName="Internal">
+                    <ui:LookupDataTable LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnIndex="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[DT_ISO_EU]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="433.6,295.2" sap2010:WorkflowViewState.IdRef="LookupDataTable_7" LookupColumnName="Code" LookupValue="[CurrentRow(&quot;Alpha-2 code&quot;).ToString]" TargetColumnName="Internal">
                       <ui:LookupDataTable.CellValue>
                         <OutArgument x:TypeArguments="x:Object">[Str_EU]</OutArgument>
                       </ui:LookupDataTable.CellValue>
                     </ui:LookupDataTable>
-                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_19">
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_19">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("Numeric")]</OutArgument>
                       </Assign.To>
@@ -186,15 +186,15 @@
                         <InArgument x:TypeArguments="x:Object">[Str_numeric]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_20">
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_20">
                       <Assign.To>
-                        <OutArgument x:TypeArguments="x:Object">[CurrentRow("Continent")]</OutArgument>
+                        <OutArgument x:TypeArguments="x:Object">[CurrentRow("Country_Name_Kor")]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:Object">[Str_continent]</InArgument>
+                        <InArgument x:TypeArguments="x:Object">[Str_Country_name_kor]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_21">
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_21">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Object">[CurrentRow("EU_Check")]</OutArgument>
                       </Assign.To>
@@ -206,7 +206,7 @@
                 </ActivityAction>
               </ui:ForEachRow.Body>
             </ui:ForEachRow>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="530,141" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;ISO Sheet 통합 완료(DT_ISO_Main)&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="529.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;ISO Sheet 통합 완료(DT_ISO_Main)&quot;]" />
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
