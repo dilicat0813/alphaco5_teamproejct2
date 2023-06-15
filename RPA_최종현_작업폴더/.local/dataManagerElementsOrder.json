@@ -11,7 +11,10 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "Str_1&Sequence_1",
+        "DT_Ex&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -352,7 +355,8 @@
       "Path": "invoke/환율데이터와ISO룩업.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "Int_Value&Sequence_60",
+        "Int_Value&Sequence_64",
+        "Str_Test_Url&Sequence_61",
         "Str_Test&Sequence_61"
       ],
       "ArgumentsSectionElementsOrder": [
@@ -361,6 +365,57 @@
         "Str_Search_URl",
         "Str_Test",
         "Str_Get"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_12-2_excel_write_2 - 복사 (1).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_Workitem_Exist&Sequence_66",
+        "Int_cnt_0&Sequence_64"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_DT_Workitem_Type1",
+        "In_config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_05_PDF파일분류.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dump_text&Sequence_9",
+        "Array_pdf_text&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_out_DT_Workitem",
+        "in_SourceData_Path",
+        "in_pdf",
+        "out_DT_WorkItem_Exist",
+        "out_DT_WorkItem_NoExist",
+        "In_List_attach_1"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_06-1_Type1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "list_col_name&Sequence_18",
+        "dump_text&Sequence_13",
+        "Array_pdf_text&Sequence_13",
+        "int_cnt&Sequence_13",
+        "str_line21&Sequence_13"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_SourceData_Path",
+        "Out_DT_Work_item_Type1",
+        "in_pdf",
+        "in_out_DT_Workitem_exist"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

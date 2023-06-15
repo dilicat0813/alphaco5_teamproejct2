@@ -143,3 +143,41 @@ InvoiceID,Vendor,Address,Date1,TaxID,City_Country,to_Name,to_address1,to_city,to
  ,93085026,Process Vendor Invoice,WI3,Open,2021-06-22,,Type2,805266,Copiers and More,Strada Copiatoarelor 33,2017-09-17,,"Brasov, Romania",ACME Systems Inc.,"Somewhere Road 59, Bucharest, Romania",Bucharest,Romania,RO,Beverages and Catering,79608 USD,1,79608 USD,66340 USD,13268 USD,79608 USD,,428,I,EU
  ]
 
+
+DT_ISO_MasterTable
+
+[Country,Alpha-2 code,Alpha-3 code,Numeric,Country_Name_Kor,EU_Check, "ExchangeRate"
+Afghanistan,AF,AFG,004,아프가니스탄,
+Albania,AL,ALB,008,알바니아,
+Algeria,DZ,DZA,012,알제리,
+American Samoa,AS,ASM,,아메리칸 사모아,
+Andorra,AD,AND,,안도라,
+Angola,AO,AGO,016,앙골라,
+Anguilla,AI,AIA,,앵귈라,
+Antarctica,AQ,ATA,,남극 대륙,
+Antigua and Barbuda,AG,ATG,020,앤티가바부다,
+Argentina,AR,ARG,024,아르헨티나,
+Armenia,AM,ARM,660,아르메니아,
+Aruba,AW,ABW,,아루바,
+Australia,AU,AUS,010,호주,
+Austria,AT,AUT,028,오스트리아,EU
+
+
+DT_Ex
+
+[국가명,ExchangeRate
+일본 엔 (JPY) (100),911.00
+유로 (EUR),"1,382.18"
+영국 파운드 (GBP),"1,615.67"
+캐나다 달러 (CAD),957.34
+스위스 프랑 (CHF),"1,416.25"
+호주 달러 (AUD),867.04
+
+[국가명,ExchangeRate
+일본,911.00
+유로,"1,382.18"
+
+[Country,Alpha-2 code,Alpha-3 code,Numeric,Country_Name_Kor,EU_Check,ExchangeRate
+Afghanistan,AF,AFG,004,아프가니스탄,,
+Albania,AL,ALB,008,알바니아,,
+Algeria,DZ,DZA,012,알제리,,
