@@ -18,6 +18,31 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "0_통합본.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "config&Flowchart_1",
+        "Str_Password&Flowchart_1",
+        "Str_Id&Flowchart_1",
+        "DT_Workitem&Flowchart_1",
+        "DT_Workitem_Type2&Flowchart_1",
+        "DT_Workitem_Type1&Flowchart_1",
+        "DT_Workitem_Exist&Flowchart_1",
+        "DT_Workitem_NoExist_1&Flowchart_1",
+        "DT_Workitem_NoExist_2&Flowchart_1",
+        "List_Attach_NoExist2&Flowchart_1",
+        "List_Attach_NoExist1&Flowchart_1",
+        "DT_Workitem_Exist_2&Flowchart_1",
+        "DT_Workitem_Type1_NoExist&Flowchart_1",
+        "DT_Workitem_Type2_NoExist&Flowchart_1",
+        "DT_ISO_Main&Flowchart_1",
+        "configpath&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
