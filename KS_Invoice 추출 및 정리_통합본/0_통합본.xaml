@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_0_통합본" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="693.6,3193.6" sap2010:WorkflowViewState.IdRef="_0_통합본_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_0_통합본" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="818.4,3285.6" sap2010:WorkflowViewState.IdRef="_0_통합본_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -484,11 +484,11 @@
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <av:Point x:Key="ShapeLocation">101,2742</av:Point>
-                                              <av:Size x:Key="ShapeSize">200,114.4</av:Size>
-                                              <av:PointCollection x:Key="ConnectorLocation">201,2856.4 201,2906</av:PointCollection>
+                                              <av:Size x:Key="ShapeSize">200,127.2</av:Size>
+                                              <av:PointCollection x:Key="ConnectorLocation">201,2869.2 201,2906</av:PointCollection>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Sequence sap2010:Annotation.AnnotationText="//엑셀 작업 완료" DisplayName="10-1. 엑셀1(김철, 민경환)" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                          <Sequence sap2010:Annotation.AnnotationText="//엑셀 작업 완료&#xD;&#xA;//엑셀 킬 추가 필요" DisplayName="10-1. 엑셀1(김철, 민경환)" sap:VirtualizedContainerService.HintSize="200,127.2" sap2010:WorkflowViewState.IdRef="Sequence_52">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -507,11 +507,11 @@
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <av:Point x:Key="ShapeLocation">101,2906</av:Point>
-                                                  <av:Size x:Key="ShapeSize">200,114.4</av:Size>
-                                                  <av:PointCollection x:Key="ConnectorLocation">201,3020.4 201,3070</av:PointCollection>
+                                                  <av:Size x:Key="ShapeSize">200,127.2</av:Size>
+                                                  <av:PointCollection x:Key="ConnectorLocation">201,3033.2 201,3070</av:PointCollection>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <Sequence sap2010:Annotation.AnnotationText="//엑셀작업 완료" DisplayName="10-2. 엑셀2(민경환)" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                              <Sequence sap2010:Annotation.AnnotationText="//엑셀작업 완료&#xD;&#xA;//엑셀 킬 추가 필요" DisplayName="10-2. 엑셀2(민경환)" sap:VirtualizedContainerService.HintSize="200,127.2" sap2010:WorkflowViewState.IdRef="Sequence_53">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -533,7 +533,7 @@
                                                       <av:Size x:Key="ShapeSize">200,114.4</av:Size>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="10-3. 엑셀3(유태호/최종현)" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                  <Sequence sap2010:Annotation.AnnotationText="//엑셀 킬 추가 필요" DisplayName="10-3. 엑셀3(유태호/최종현)" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -710,7 +710,7 @@
           <av:PointCollection x:Key="ConnectorLocation">201,253.2 201,303</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="//크롬, 엑셀 낄-&#xA;" DisplayName="KILL" sap:VirtualizedContainerService.HintSize="200,127.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <Sequence sap2010:Annotation.AnnotationText="//크롬, 엑셀 킬&#xA;" DisplayName="KILL" sap:VirtualizedContainerService.HintSize="200,127.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
