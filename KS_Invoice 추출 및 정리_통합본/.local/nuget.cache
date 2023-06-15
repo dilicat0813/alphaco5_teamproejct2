@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l32DOxuHTIm7wOmETzTzX7gHKOe5xa5FlHpt+ztMsb40syoOmVBiTLzFfEea7/lYBcFoRjBsVhrwXM5OYI+6Iw==",
+  "dgSpecHash": "wFXjXx1dDVyC2OwfVSameUkV1JoVUUygnS+hgUyJ2DIQKeVTZC7WYmBHtfbq47XT9qPkc2IxnzoF1sEwWFjPfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mkh08\\OneDrive\\문서\\uipath\\alphaco5_teamproject2\\alphaco5_teamproejct2\\KS_Invoice 추출 및 정리_통합본\\.local\\",
+  "projectFilePath": "C:\\Users\\mkh08\\OneDrive\\문서\\GitHub\\alphaco5_teamproejct2\\KS_Invoice 추출 및 정리_통합본\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\mkh08\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\mkh08\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",

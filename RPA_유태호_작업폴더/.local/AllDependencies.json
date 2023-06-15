@@ -21794,15 +21794,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\th760\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RPA_유태호_작업폴더",
       "projectName": "RPA_유태호_작업폴더",
-      "projectPath": "C:\\Users\\th760\\git_lecture\\lecture2\\alphaco5_teamproejct2\\RPA_유태호_작업폴더\\.local",
-      "packagesPath": "C:\\Users\\th760\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\th760\\git_lecture\\lecture2\\alphaco5_teamproejct2\\RPA_유태호_작업폴더\\.local"
+      "projectPath": "C:\\Users\\user\\Documents\\GitHub\\lecture2\\alphaco5_teamproejct2\\RPA_유태호_작업폴더\\.local",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Documents\\GitHub\\lecture2\\alphaco5_teamproejct2\\RPA_유태호_작업폴더\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -21843,7 +21843,7 @@
             "version": "[23.4.6, 23.4.6]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\th760\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\user\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
