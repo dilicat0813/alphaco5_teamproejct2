@@ -156,7 +156,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID13</x:Reference>
+      <x:Reference>__ReferenceID16</x:Reference>
     </Flowchart.StartNode>
     <FlowStep>
       <sap:WorkflowViewStateService.ViewState>
@@ -174,7 +174,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </Sequence>
     </FlowStep>
-    <FlowStep>
+    <FlowStep x:Name="__ReferenceID0">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">101,644</av:Point>
@@ -189,49 +189,57 @@
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_1.OpenBrowser.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="486,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="invoke\invoke_01.OpenBrowser.xaml">
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_1.OpenBrowser.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="invoke\invoke_01.OpenBrowser.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="x:String" x:Key="in_ACME_loginpage">[config("System1_URL").ToString]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_ACME_loginpage">
+              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;System1_URL&quot;).ToString" />
+            </InArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Open Browser&quot;]" />
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_2.ACME_login.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="486,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="invoke\invoke_02.ACME_login.xaml">
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Open Browser&quot;]" />
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_2.ACME_login.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="invoke\invoke_02.ACME_login.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="x:String" x:Key="in_login_id">[Str_Id]</InArgument>
-            <InArgument x:TypeArguments="ss:SecureString" x:Key="in_pswd">[Str_Password]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_login_id">
+              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Str_Id" />
+            </InArgument>
+            <InArgument x:TypeArguments="ss:SecureString" x:Key="in_pswd">
+              <VisualBasicValue x:TypeArguments="ss:SecureString" ExpressionText="Str_Password" />
+            </InArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,141" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;AMCE Login&quot;]" />
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_3.TDWorkitem추출칼럼추가.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="486,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="invoke\invoke_03.TDWorkitem추출칼럼추가.xaml">
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;AMCE Login&quot;]" />
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_3.TDWorkitem추출칼럼추가.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="invoke\invoke_03.TDWorkitem추출칼럼추가.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="inout_TD_Workitem">[DT_Workitem]</InOutArgument>
+            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="inout_TD_Workitem">
+              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem" />
+            </InOutArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,141" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;DT_Workitem 추출&quot;]" />
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,141" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;File 다운로드 시작&quot;]" />
-        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,303" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-          <ui:CommentOut.Body>
-            <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,224" sap2010:WorkflowViewState.IdRef="Sequence_31">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_4.Type=WI3Status=open.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="invoke\invoke_04.Type=WI3Status=open.xaml">
-                <ui:InvokeWorkflowFile.Arguments>
-                  <InOutArgument x:TypeArguments="sd:DataTable" x:Key="inout_TD_Workitem">[DT_Workitem]</InOutArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_System1_URL">[config("System1_URL").ToString]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_work_items">[config("work-items").ToString]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">[config("SourceData").ToString]</InArgument>
-                </ui:InvokeWorkflowFile.Arguments>
-              </ui:InvokeWorkflowFile>
-            </Sequence>
-          </ui:CommentOut.Body>
-        </ui:CommentOut>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,141" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;File 다운로드 완료&quot;]" />
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;DT_Workitem 추출&quot;]" />
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;File 다운로드 시작&quot;]" />
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_4.Type=WI3Status=open.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_26" UnSafe="False" WorkflowFileName="invoke\invoke_04.Type=WI3Status=open.xaml">
+          <ui:InvokeWorkflowFile.Arguments>
+            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="inout_TD_Workitem">
+              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem" />
+            </InOutArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_System1_URL">
+              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;System1_URL&quot;).ToString" />
+            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_work_items">
+              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;work-items&quot;).ToString" />
+            </InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">
+              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;SourceData&quot;).ToString" />
+            </InArgument>
+            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_config">
+              <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="config" />
+            </InArgument>
+          </ui:InvokeWorkflowFile.Arguments>
+        </ui:InvokeWorkflowFile>
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;File 다운로드 완료&quot;]" />
       </Sequence>
       <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID2">
+        <FlowStep x:Name="__ReferenceID3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">101,854</av:Point>
@@ -246,19 +254,31 @@
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_5_pdf_to_text.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="invoke\invoke_05_PDF파일분류.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_5_pdf_to_text.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="invoke\invoke_05_PDF파일분류.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem">[DT_Workitem]</InOutArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">[config("SourceData").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_pdf">[config("pdf").ToString]</InArgument>
-                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_WorkItem_Exist">[DT_Workitem_Exist]</OutArgument>
-                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_WorkItem_NoExist">[DT_Workitem_NoExist_1]</OutArgument>
-                <InOutArgument x:TypeArguments="scg:List(x:String)" x:Key="In_List_attach_1">[List_Attach_NoExist1]</InOutArgument>
+                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem">
+                  <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem" />
+                </InOutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">
+                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;SourceData&quot;).ToString" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_pdf">
+                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;pdf&quot;).ToString" />
+                </InArgument>
+                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_WorkItem_Exist">
+                  <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Exist" />
+                </OutArgument>
+                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_WorkItem_NoExist">
+                  <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_NoExist_1" />
+                </OutArgument>
+                <InOutArgument x:TypeArguments="scg:List(x:String)" x:Key="In_List_attach_1">
+                  <VisualBasicReference x:TypeArguments="scg:List(x:String)" ExpressionText="List_Attach_NoExist1" />
+                </InOutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
           </Sequence>
           <FlowStep.Next>
-            <FlowStep x:Name="__ReferenceID3">
+            <FlowStep x:Name="__ReferenceID4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">101,1159</av:Point>
@@ -273,61 +293,97 @@
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="DT_WorkItem_Exist" sap:VirtualizedContainerService.HintSize="450,739" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                <Sequence DisplayName="DT_WorkItem_Exist" sap:VirtualizedContainerService.HintSize="449.6,744" sap2010:WorkflowViewState.IdRef="Sequence_43">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_6-1_Type1.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="invoke\invoke_06-1_Type1.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_6-1_Type1.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="invoke\invoke_06-1_Type1.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">[config("SourceData").ToString]</InArgument>
-                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type1">[DT_Workitem_Type1]</OutArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">[config("pdf").ToString]</InArgument>
-                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_exist">[DT_Workitem_Exist]</InOutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;SourceData&quot;).ToString" />
+                      </InArgument>
+                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type1">
+                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type1" />
+                      </OutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;pdf&quot;).ToString" />
+                      </InArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_exist">
+                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Exist" />
+                      </InOutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;TaxID Exist PDF_Type1 자료 추출 완료&quot;]" />
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_6-2_Type2.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="invoke\invoke_06-2_Type2.xaml">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;TaxID Exist PDF_Type1 자료 추출 완료&quot;]" />
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_6-2_Type2.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="invoke\invoke_06-2_Type2.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">[config("SourceData").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">[config("pdf").ToString]</InArgument>
-                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type2">[DT_Workitem_Type2]</OutArgument>
-                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_Out_DT_Work_item_Type1">[DT_Workitem_Type1]</InOutArgument>
-                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_exist">[DT_Workitem_Exist]</InOutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;SourceData&quot;).ToString" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;pdf&quot;).ToString" />
+                      </InArgument>
+                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type2">
+                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type2" />
+                      </OutArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_Out_DT_Work_item_Type1">
+                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type1" />
+                      </InOutArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_exist">
+                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Exist" />
+                      </InOutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;TaxID Exist PDF_Type2 자료 추출 완료&quot;]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;TaxID Exist PDF_Type2 자료 추출 완료&quot;]" />
                 </Sequence>
-                <Sequence DisplayName="DT_WorkItem_No_Exist" sap:VirtualizedContainerService.HintSize="450,739" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                <Sequence DisplayName="DT_WorkItem_No_Exist" sap:VirtualizedContainerService.HintSize="449.6,744" sap2010:WorkflowViewState.IdRef="Sequence_44">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_6-3_Type1_noexist.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="invoke\invoke_06-3_Type1_noexist.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_6-3_Type1_noexist.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="invoke\invoke_06-3_Type1_noexist.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">[config("SourceData").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">[config("pdf").ToString]</InArgument>
-                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_noexist">[DT_Workitem_NoExist_1]</InOutArgument>
-                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type1_noexist">[DT_Workitem_Type1_NoExist]</OutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;SourceData&quot;).ToString" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;pdf&quot;).ToString" />
+                      </InArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_noexist">
+                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_NoExist_1" />
+                      </InOutArgument>
+                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type1_noexist">
+                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type1_NoExist" />
+                      </OutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;TaxID No_Exist PDF_Type1 자료 추출 완료&quot;]" />
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_6-4_Type2_noexist.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="invoke\invoke_06-4_Type2_noexist.xaml">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;TaxID No_Exist PDF_Type1 자료 추출 완료&quot;]" />
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_6-4_Type2_noexist.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="invoke\invoke_06-4_Type2_noexist.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">[config("SourceData").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">[config("pdf").ToString]</InArgument>
-                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_NoExist">[DT_Workitem_NoExist_1]</InOutArgument>
-                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type2_NoExist">[DT_Workitem_Type2_NoExist]</OutArgument>
-                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_Out_DT_Work_item_Type1_NoExist">[DT_Workitem_Type1_NoExist]</InOutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;SourceData&quot;).ToString" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_pdf">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;pdf&quot;).ToString" />
+                      </InArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_out_DT_Workitem_NoExist">
+                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_NoExist_1" />
+                      </InOutArgument>
+                      <OutArgument x:TypeArguments="sd:DataTable" x:Key="Out_DT_Work_item_Type2_NoExist">
+                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type2_NoExist" />
+                      </OutArgument>
+                      <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_Out_DT_Work_item_Type1_NoExist">
+                        <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type1_NoExist" />
+                      </InOutArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;TaxID No_Exist PDF_Type2 자료 추출 완료&quot;]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;TaxID No_Exist PDF_Type2 자료 추출 완료&quot;]" />
                 </Sequence>
               </Sequence>
               <FlowStep.Next>
-                <FlowStep x:Name="__ReferenceID4">
+                <FlowStep x:Name="__ReferenceID5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">101,1432</av:Point>
@@ -342,20 +398,30 @@
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence sap:VirtualizedContainerService.HintSize="450,281" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <Sequence sap:VirtualizedContainerService.HintSize="449.6,285.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="&#xA;&#xA;" DisplayName="invoke_7_vendor_search_이동및조사.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,170" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="invoke\invoke_07_vendor_search_이동및조사.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="&#xA;&#xA;" DisplayName="invoke_7_vendor_search_이동및조사.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,173.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="invoke\invoke_07_vendor_search_이동및조사.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
-                          <InArgument x:TypeArguments="sd:DataTable" x:Key="In_out_DT_Workitem_Type1">[DT_Workitem_Type1]</InArgument>
-                          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="In_config">[config]</InArgument>
-                          <InOutArgument x:TypeArguments="scg:List(x:String)" x:Key="In_List_attach_2">[List_Attach_NoExist2]</InOutArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">[config("SourceData").ToString]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="In_pdf">[config("pdf").ToString]</InArgument>
+                          <InArgument x:TypeArguments="sd:DataTable" x:Key="In_out_DT_Workitem_Type1">
+                            <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type1" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="In_config">
+                            <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="config" />
+                          </InArgument>
+                          <InOutArgument x:TypeArguments="scg:List(x:String)" x:Key="In_List_attach_2">
+                            <VisualBasicReference x:TypeArguments="scg:List(x:String)" ExpressionText="List_Attach_NoExist2" />
+                          </InOutArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_SourceData_Path">
+                            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;SourceData&quot;).ToString" />
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="In_pdf">
+                            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="config(&quot;pdf&quot;).ToString" />
+                          </InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -366,7 +432,7 @@
                     </Sequence>
                   </Sequence>
                   <FlowStep.Next>
-                    <FlowStep x:Name="__ReferenceID5">
+                    <FlowStep x:Name="__ReferenceID6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">101,1625</av:Point>
@@ -390,11 +456,12 @@
                         </ui:InvokeWorkflowFile>
                       </Sequence>
                       <FlowStep.Next>
-                        <FlowStep x:Name="__ReferenceID6">
+                        <FlowStep x:Name="__ReferenceID7">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">101,1930</av:Point>
                               <av:Size x:Key="ShapeSize">200,175.2</av:Size>
+                              <av:PointCollection x:Key="ConnectorLocation">201,2105.2 201,2116.4 210,2116.4</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <Sequence sap2010:Annotation.AnnotationText="// O인 (Add invoice Detail) 데이터 입력&#xA;//정상작동 확인 완료&#xA;//DT_Exist2 사용, 데이터 추가 없음" DisplayName="6. Add Invoice Detail 입력" sap:VirtualizedContainerService.HintSize="200,175.2" sap2010:WorkflowViewState.IdRef="Sequence_25">
@@ -411,6 +478,175 @@
                               </ui:InvokeWorkflowFile.Arguments>
                             </ui:InvokeWorkflowFile>
                           </Sequence>
+                          <FlowStep.Next>
+                            <FlowStep x:Name="__ReferenceID15">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <av:Point x:Key="ShapeLocation">110,2116.4</av:Point>
+                                  <av:Size x:Key="ShapeSize">200,207.2</av:Size>
+                                  <av:PointCollection x:Key="ConnectorLocation">210,2323.6 210,2308.4 200,2308.4</av:PointCollection>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Sequence sap2010:Annotation.AnnotationText="// 분리된 세 시트를 하나의 DT로 통합&#xA;// 통합한 것을 조사할 시트와 Vlookup시켜서 원하는 대상만 가져오도록&#xA;// 러시아는 러시아연방인데..?" DisplayName="7. Lookup 국가 코드" sap:VirtualizedContainerService.HintSize="200,207.2" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_10_lookup_data_code.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_25" UnSafe="False" WorkflowFileName="invoke\invoke_10_lookup_data_code.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_config">[config]</InArgument>
+                                    <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_ISO_Main">[DT_ISO_Main]</OutArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                              </Sequence>
+                              <FlowStep.Next>
+                                <FlowStep x:Name="__ReferenceID14">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <av:Point x:Key="ShapeLocation">100,2308.4</av:Point>
+                                      <av:Size x:Key="ShapeSize">200,83.2</av:Size>
+                                      <av:PointCollection x:Key="ConnectorLocation">200,2391.6 200,2413 201,2413</av:PointCollection>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="200,83.2" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_exchange_rate_crawling.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_24" UnSafe="False" WorkflowFileName="invoke\invoke_exchange_rate_crawling.xaml">
+                                      <ui:InvokeWorkflowFile.Arguments>
+                                        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_config">
+                                          <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="config" />
+                                        </InArgument>
+                                        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT_ISO_Main">
+                                          <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="DT_ISO_Main" />
+                                        </InArgument>
+                                      </ui:InvokeWorkflowFile.Arguments>
+                                    </ui:InvokeWorkflowFile>
+                                  </Sequence>
+                                  <FlowStep.Next>
+                                    <FlowStep x:Name="__ReferenceID9">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <av:Point x:Key="ShapeLocation">101,2413</av:Point>
+                                          <av:Size x:Key="ShapeSize">200,114.4</av:Size>
+                                          <av:PointCollection x:Key="ConnectorLocation">201,2527.4 201,2577.4</av:PointCollection>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Sequence sap2010:Annotation.AnnotationText="" DisplayName="8. 사용 데이터 테이블 통합" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:MergeDataTable Destination="[DT_Workitem_Type1]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="387.2,134.4" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[DT_Workitem_Type1_NoExist]" />
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;데이터테이블 통합(DT_workItem_Type1)&quot;]" />
+                                      </Sequence>
+                                      <FlowStep.Next>
+                                        <FlowStep x:Name="__ReferenceID8">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <av:Point x:Key="ShapeLocation">101,2577.4</av:Point>
+                                              <av:Size x:Key="ShapeSize">200,114.4</av:Size>
+                                              <av:PointCollection x:Key="ConnectorLocation">201,2691.8 201,2742</av:PointCollection>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="9. 전체데이터시트에 ISO  Vlookup" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_11_lookup_iso_and_main_dt.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="invoke\invoke_11_lookup_iso_and_main_dt.xaml">
+                                              <ui:InvokeWorkflowFile.Arguments>
+                                                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_Out_DT_Workitem_Type1">[DT_Workitem_Type1]</InOutArgument>
+                                                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT_ISO_Main">[DT_ISO_Main]</InArgument>
+                                              </ui:InvokeWorkflowFile.Arguments>
+                                            </ui:InvokeWorkflowFile>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;DT_ISO와 메인 DT lookup 완료&quot;]" />
+                                            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                          </Sequence>
+                                          <FlowStep.Next>
+                                            <FlowStep x:Name="__ReferenceID10">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <av:Point x:Key="ShapeLocation">101,2742</av:Point>
+                                                  <av:Size x:Key="ShapeSize">200,114.4</av:Size>
+                                                  <av:PointCollection x:Key="ConnectorLocation">201,2856.4 201,2906</av:PointCollection>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <Sequence sap2010:Annotation.AnnotationText="//엑셀 작업 완료" DisplayName="10-1. 엑셀1(김철, 민경환)" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_12_excel_write_1.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="invoke\invoke_12-1_excel_write_1.xaml">
+                                                  <ui:InvokeWorkflowFile.Arguments>
+                                                    <InArgument x:TypeArguments="sd:DataTable" x:Key="In_DT_Workitem_Type1">[DT_Workitem_Type1]</InArgument>
+                                                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="In_config">[config]</InArgument>
+                                                  </ui:InvokeWorkflowFile.Arguments>
+                                                </ui:InvokeWorkflowFile>
+                                              </Sequence>
+                                              <FlowStep.Next>
+                                                <FlowStep x:Name="__ReferenceID11">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <av:Point x:Key="ShapeLocation">101,2906</av:Point>
+                                                      <av:Size x:Key="ShapeSize">200,114.4</av:Size>
+                                                      <av:PointCollection x:Key="ConnectorLocation">201,3020.4 201,3070</av:PointCollection>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Sequence sap2010:Annotation.AnnotationText="//엑셀작업 완료" DisplayName="10-2. 엑셀2(민경환)" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_12-2_excel_write_2.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="invoke\invoke_12-2_excel_write_2.xaml">
+                                                      <ui:InvokeWorkflowFile.Arguments>
+                                                        <InArgument x:TypeArguments="sd:DataTable" x:Key="In_DT_Workitem_Type1">[DT_Workitem_Type1]</InArgument>
+                                                        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="In_config">[config]</InArgument>
+                                                      </ui:InvokeWorkflowFile.Arguments>
+                                                    </ui:InvokeWorkflowFile>
+                                                  </Sequence>
+                                                  <FlowStep.Next>
+                                                    <FlowStep x:Name="__ReferenceID12">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <av:Point x:Key="ShapeLocation">101,3070</av:Point>
+                                                          <av:Size x:Key="ShapeSize">200,114.4</av:Size>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <Sequence sap2010:Annotation.AnnotationText="" DisplayName="10-3. 엑셀3(유태호/최종현)" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </Sequence>
+                                                    </FlowStep>
+                                                  </FlowStep.Next>
+                                                </FlowStep>
+                                              </FlowStep.Next>
+                                            </FlowStep>
+                                          </FlowStep.Next>
+                                        </FlowStep>
+                                      </FlowStep.Next>
+                                    </FlowStep>
+                                  </FlowStep.Next>
+                                </FlowStep>
+                              </FlowStep.Next>
+                            </FlowStep>
+                          </FlowStep.Next>
                         </FlowStep>
                       </FlowStep.Next>
                     </FlowStep>
@@ -422,7 +658,7 @@
         </FlowStep>
       </FlowStep.Next>
     </FlowStep>
-    <FlowStep x:Name="__ReferenceID0">
+    <FlowStep x:Name="__ReferenceID1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">101,303</av:Point>
@@ -430,7 +666,7 @@
           <av:PointCollection x:Key="ConnectorLocation">201,416.4 201,466</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="//config.xlsx 불러오기" DisplayName="config" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence sap2010:Annotation.AnnotationText="//config.xlsx 불러오기" DisplayName="config" sap:VirtualizedContainerService.HintSize="496,682.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="configpath" />
         </Sequence.Variables>
@@ -453,24 +689,28 @@
             <OutArgument x:TypeArguments="x:String">[configpath]</OutArgument>
           </Assign.To>
           <Assign.Value>
-            <InArgument x:TypeArguments="x:String">C:\RPA\KS_Invoice 추출 및 정리_통합본\Data\Config.xlsx</InArgument>
+            <InArgument x:TypeArguments="x:String">C:\RPA\KS_Invoice 추출 및 정리_통합본\data\Config.xlsx</InArgument>
           </Assign.Value>
         </Assign>
         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_0_Config_Read.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="invoke\invoke_0_Config_Read.xaml">
           <ui:InvokeWorkflowFile.Arguments>
-            <InArgument x:TypeArguments="x:String" x:Key="In_Configpath">[configpath]</InArgument>
-            <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_out_Config">[config]</InOutArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="In_Configpath">
+              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="configpath" />
+            </InArgument>
+            <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_out_Config">
+              <VisualBasicReference x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="config" />
+            </InOutArgument>
           </ui:InvokeWorkflowFile.Arguments>
         </ui:InvokeWorkflowFile>
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Config Load Complete&quot;]" />
       </Sequence>
       <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID1">
+        <FlowStep x:Name="__ReferenceID2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">101,467</av:Point>
               <av:Size x:Key="ShapeSize">200,127.2</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">301,530.6 351,530.6</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">201,594.2 201,644</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Sequence sap2010:Annotation.AnnotationText="//계정, 데이터테이블 불러오기" DisplayName="assign" sap:VirtualizedContainerService.HintSize="200,127.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
@@ -480,8 +720,8 @@
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Secure Credentials" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[Str_Password]" PersistanceType="Enterprise" Target="[config(&quot;System1_Account&quot;).ToString.Trim]" Username="[Str_Id]" />
-            <Assign DisplayName="최초 추출 DT" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Secure Credentials" sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[Str_Password]" PersistanceType="Enterprise" Target="[config(&quot;System1_Account&quot;).ToString.Trim]" Username="[Str_Id]" />
+            <Assign DisplayName="최초 추출 DT" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_6">
               <Assign.To>
                 <OutArgument x:TypeArguments="sd:DataTable">[DT_Workitem]</OutArgument>
               </Assign.To>
@@ -489,7 +729,7 @@
                 <InArgument x:TypeArguments="sd:DataTable">[New data.datatable()]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_10">
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_10">
               <Assign.To>
                 <OutArgument x:TypeArguments="sd:DataTable">[DT_Workitem_NoExist_1]</OutArgument>
               </Assign.To>
@@ -497,7 +737,7 @@
                 <InArgument x:TypeArguments="sd:DataTable">[New data.datatable()]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_13">
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_13">
               <Assign.To>
                 <OutArgument x:TypeArguments="sd:DataTable">[DT_Workitem_NoExist_2]</OutArgument>
               </Assign.To>
@@ -505,7 +745,7 @@
                 <InArgument x:TypeArguments="sd:DataTable">[New data.datatable()]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_9">
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_9">
               <Assign.To>
                 <OutArgument x:TypeArguments="sd:DataTable">[DT_Workitem_Exist]</OutArgument>
               </Assign.To>
@@ -513,7 +753,7 @@
                 <InArgument x:TypeArguments="sd:DataTable">[New data.datatable()]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_22">
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_22">
               <Assign.To>
                 <OutArgument x:TypeArguments="sd:DataTable">[DT_Workitem_Exist_2]</OutArgument>
               </Assign.To>
@@ -521,7 +761,7 @@
                 <InArgument x:TypeArguments="sd:DataTable">[New data.datatable()]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_7">
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_7">
               <Assign.To>
                 <OutArgument x:TypeArguments="sd:DataTable">[DT_Workitem_Type1]</OutArgument>
               </Assign.To>
@@ -529,7 +769,7 @@
                 <InArgument x:TypeArguments="sd:DataTable">[New data.datatable()]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_8">
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_8">
               <Assign.To>
                 <OutArgument x:TypeArguments="sd:DataTable">[DT_Workitem_Type2]</OutArgument>
               </Assign.To>
@@ -537,7 +777,7 @@
                 <InArgument x:TypeArguments="sd:DataTable">[New data.datatable()]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_14">
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_14">
               <Assign.To>
                 <OutArgument x:TypeArguments="scg:List(x:String)">[List_Attach_NoExist1]</OutArgument>
               </Assign.To>
@@ -545,7 +785,7 @@
                 <InArgument x:TypeArguments="scg:List(x:String)">[New List(of String)()]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_15">
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_15">
               <Assign.To>
                 <OutArgument x:TypeArguments="scg:List(x:String)">[List_Attach_NoExist2]</OutArgument>
               </Assign.To>
@@ -555,65 +795,12 @@
             </Assign>
           </Sequence>
           <FlowStep.Next>
-            <FlowStep x:Name="__ReferenceID7">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">351,427</av:Point>
-                  <av:Size x:Key="ShapeSize">200,207.2</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">451,634.2 451,684.2</av:PointCollection>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Sequence sap2010:Annotation.AnnotationText="// 분리된 세 시트를 하나의 DT로 통합&#xA;// 통합한 것을 조사할 시트와 Vlookup시켜서 원하는 대상만 가져오도록&#xA;// 러시아는 러시아연방인데..?" DisplayName="7. Lookup 국가 코드" sap:VirtualizedContainerService.HintSize="200,207.2" sap2010:WorkflowViewState.IdRef="Sequence_40">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_10_lookup_data_code.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="invoke\invoke_10_lookup_data_code.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_config">
-                      <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="config" />
-                    </InArgument>
-                    <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_ISO_Main">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_ISO_Main" />
-                    </OutArgument>
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
-              </Sequence>
-              <FlowStep.Next>
-                <FlowStep x:Name="__ReferenceID12">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">351,684.2</av:Point>
-                      <av:Size x:Key="ShapeSize">200,83.2</av:Size>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Sequence sap:VirtualizedContainerService.HintSize="449.6,225.60000000000002" sap2010:WorkflowViewState.IdRef="Sequence_56">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_exchange_rate_crawling.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="invoke\invoke_exchange_rate_crawling.xaml">
-                      <ui:InvokeWorkflowFile.Arguments>
-                        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_config">
-                          <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="config" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT_ISO_Main">
-                          <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="DT_ISO_Main" />
-                        </InArgument>
-                      </ui:InvokeWorkflowFile.Arguments>
-                    </ui:InvokeWorkflowFile>
-                  </Sequence>
-                </FlowStep>
-              </FlowStep.Next>
-            </FlowStep>
+            <x:Reference>__ReferenceID0</x:Reference>
           </FlowStep.Next>
         </FlowStep>
       </FlowStep.Next>
     </FlowStep>
-    <FlowStep x:Name="__ReferenceID13">
+    <FlowStep x:Name="__ReferenceID16">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">101,126</av:Point>
@@ -628,19 +815,19 @@
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome.exe" />
-        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="excel" />
+        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="387.2,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome.exe" />
+        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="387.2,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="excel" />
       </Sequence>
       <FlowStep.Next>
-        <x:Reference>__ReferenceID0</x:Reference>
+        <x:Reference>__ReferenceID1</x:Reference>
       </FlowStep.Next>
     </FlowStep>
-    <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID3</x:Reference>
     <x:Reference>__ReferenceID4</x:Reference>
     <x:Reference>__ReferenceID5</x:Reference>
     <x:Reference>__ReferenceID6</x:Reference>
+    <x:Reference>__ReferenceID7</x:Reference>
     <FlowStep>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -656,125 +843,59 @@
         </sap:WorkflowViewStateService.ViewState>
       </Sequence>
     </FlowStep>
-    <FlowStep x:Name="__ReferenceID8">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">101,2577.4</av:Point>
-          <av:Size x:Key="ShapeSize">200,114.4</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">201,2691.8 201,2742</av:PointCollection>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="" DisplayName="9. 전체데이터시트에 ISO  Vlookup" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_33">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_11_lookup_iso_and_main_dt.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="invoke\invoke_11_lookup_iso_and_main_dt.xaml">
-          <ui:InvokeWorkflowFile.Arguments>
-            <InOutArgument x:TypeArguments="sd:DataTable" x:Key="In_Out_DT_Workitem_Type1">[DT_Workitem_Type1]</InOutArgument>
-            <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT_ISO_Main">[DT_ISO_Main]</InArgument>
-          </ui:InvokeWorkflowFile.Arguments>
-        </ui:InvokeWorkflowFile>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;DT_ISO와 메인 DT lookup 완료&quot;]" />
-        <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-      </Sequence>
-      <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID9">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">101,2742</av:Point>
-              <av:Size x:Key="ShapeSize">200,114.4</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">201,2856.4 201,2906</av:PointCollection>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap2010:Annotation.AnnotationText="//엑셀 작업 완료" DisplayName="10-1. 엑셀1(김철, 민경환)" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_52">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_12_excel_write_1.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="invoke\invoke_12-1_excel_write_1.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="sd:DataTable" x:Key="In_DT_Workitem_Type1">[DT_Workitem_Type1]</InArgument>
-                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="In_config">[config]</InArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-            </ui:InvokeWorkflowFile>
-          </Sequence>
-          <FlowStep.Next>
-            <FlowStep x:Name="__ReferenceID10">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">101,2906</av:Point>
-                  <av:Size x:Key="ShapeSize">200,114.4</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">201,3020.4 201,3070</av:PointCollection>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Sequence sap2010:Annotation.AnnotationText="//엑셀작업 완료" DisplayName="10-2. 엑셀2(민경환)" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_53">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_12-2_excel_write_2.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="invoke\invoke_12-2_excel_write_2.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="sd:DataTable" x:Key="In_DT_Workitem_Type1">[DT_Workitem_Type1]</InArgument>
-                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="In_config">[config]</InArgument>
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
-              </Sequence>
-              <FlowStep.Next>
-                <FlowStep x:Name="__ReferenceID11">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">101,3070</av:Point>
-                      <av:Size x:Key="ShapeSize">200,114.4</av:Size>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="10-3. 엑셀3(유태호/최종현)" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_54">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Sequence>
-                </FlowStep>
-              </FlowStep.Next>
-            </FlowStep>
-          </FlowStep.Next>
-        </FlowStep>
-      </FlowStep.Next>
-    </FlowStep>
-    <x:Reference>__ReferenceID7</x:Reference>
-    <FlowStep>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">101,2413</av:Point>
-          <av:Size x:Key="ShapeSize">200,114.4</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">201,2527.4 201,2577.4</av:PointCollection>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="" DisplayName="8. 사용 데이터 테이블 통합" sap:VirtualizedContainerService.HintSize="200,114.4" sap2010:WorkflowViewState.IdRef="Sequence_42">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <ui:MergeDataTable Destination="[DT_Workitem_Type1]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[DT_Workitem_Type1_NoExist]" />
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;데이터테이블 통합(DT_workItem_Type1)&quot;]" />
-      </Sequence>
-      <FlowStep.Next>
-        <x:Reference>__ReferenceID8</x:Reference>
-      </FlowStep.Next>
-    </FlowStep>
+    <x:Reference>__ReferenceID8</x:Reference>
     <x:Reference>__ReferenceID9</x:Reference>
     <x:Reference>__ReferenceID10</x:Reference>
     <x:Reference>__ReferenceID11</x:Reference>
     <x:Reference>__ReferenceID12</x:Reference>
+    <FlowStep x:Name="__ReferenceID13">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">351,684.2</av:Point>
+          <av:Size x:Key="ShapeSize">200,83.2</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence sap:VirtualizedContainerService.HintSize="200,83.2" sap2010:WorkflowViewState.IdRef="Sequence_57">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_exchange_rate_crawling.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_22" UnSafe="False" WorkflowFileName="invoke\invoke_exchange_rate_crawling.xaml">
+          <ui:InvokeWorkflowFile.Arguments>
+            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_config">[config]</InArgument>
+            <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT_ISO_Main">[DT_ISO_Main]</InArgument>
+          </ui:InvokeWorkflowFile.Arguments>
+        </ui:InvokeWorkflowFile>
+      </Sequence>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">351,427</av:Point>
+          <av:Size x:Key="ShapeSize">200,207.2</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">451,634.2 451,684.2</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence sap2010:Annotation.AnnotationText="// 분리된 세 시트를 하나의 DT로 통합&#xA;// 통합한 것을 조사할 시트와 Vlookup시켜서 원하는 대상만 가져오도록&#xA;// 러시아는 러시아연방인데..?" DisplayName="7. Lookup 국가 코드" sap:VirtualizedContainerService.HintSize="200,207.2" sap2010:WorkflowViewState.IdRef="Sequence_58">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_10_lookup_data_code.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_23" UnSafe="False" WorkflowFileName="invoke\invoke_10_lookup_data_code.xaml">
+          <ui:InvokeWorkflowFile.Arguments>
+            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_config">[config]</InArgument>
+            <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_ISO_Main">[DT_ISO_Main]</OutArgument>
+          </ui:InvokeWorkflowFile.Arguments>
+        </ui:InvokeWorkflowFile>
+      </Sequence>
+      <FlowStep.Next>
+        <x:Reference>__ReferenceID13</x:Reference>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID14</x:Reference>
+    <x:Reference>__ReferenceID15</x:Reference>
   </Flowchart>
 </Activity>

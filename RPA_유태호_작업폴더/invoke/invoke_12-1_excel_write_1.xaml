@@ -3,7 +3,7 @@
     <x:Property Name="In_DT_Workitem_Type1" Type="InArgument(sd:DataTable)" />
     <x:Property Name="In_config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>818.4,3558.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>631.2,3558.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -138,7 +138,17 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:FilterDataTable Filters="{x:Null}" SelectColumns="{x:Null}" sap2010:Annotation.AnnotationText="DT필터&#xA;" DataTable="[IN_DT_Workitem_Type1]" DisplayName="Filter Data Table" sap:VirtualizedContainerService.HintSize="579.2,206.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[DT_Workitem_Exist]" SelectColumnsMode="Remove">
+    <ui:FilterDataTable sap2010:Annotation.AnnotationText="DT필터&#xA;" DataTable="[IN_DT_Workitem_Type1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="579.2,206.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[DT_Workitem_Exist]" SelectColumnsMode="Remove">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <x:Null />
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
