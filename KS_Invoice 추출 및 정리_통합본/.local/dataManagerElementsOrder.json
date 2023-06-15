@@ -207,10 +207,10 @@
       "Path": "invoke/invoke_10_lookup_data_code.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "Str_Country_name_kor&Sequence_37",
         "DT_ISO_numeric&Sequence_36",
         "DT_ISO_EU&Sequence_36",
         "Str_numeric&Sequence_37",
-        "Str_continent&Sequence_37",
         "Str_EU&Sequence_37"
       ],
       "ArgumentsSectionElementsOrder": [
