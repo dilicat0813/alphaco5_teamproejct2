@@ -176,7 +176,7 @@
           <av:PointCollection x:Key="ConnectorLocation">201,803 201,854</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="//ACME접속 후 &#xA;//DT추출&#xA;//DT필터&#xA;//PDF다운" DisplayName="1. ACME 접속" sap:VirtualizedContainerService.HintSize="200,159" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence sap2010:Annotation.AnnotationText="//ACME접속 후 &#xA;//DT추출&#xA;//DT필터&#xA;//PDF다운" DisplayName="1. ACME 접속" sap:VirtualizedContainerService.HintSize="450,1372" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -203,15 +203,15 @@
         </ui:InvokeWorkflowFile>
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;DT_Workitem 추출&quot;]" />
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,94" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;File 다운로드 시작&quot;]" />
-        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,53" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,53" sap2010:WorkflowViewState.IdRef="CommentOut_5">
           <ui:CommentOut.Body>
-            <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="Sequence_58">
+            <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="Sequence_63">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_4.Type=WI3Status=open.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_24" UnSafe="False" WorkflowFileName="invoke\invoke_04.Type=WI3Status=open.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke_4.Type=WI3Status=open.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_31" UnSafe="False" WorkflowFileName="invoke\invoke_04.Type=WI3Status=open.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InOutArgument x:TypeArguments="sd:DataTable" x:Key="inout_TD_Workitem">[DT_Workitem]</InOutArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="in_System1_URL">[config("System1_URL").ToString]</InArgument>
@@ -559,7 +559,7 @@
                                                           <av:PointCollection x:Key="ConnectorLocation">201,3184 201,3224</av:PointCollection>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <Sequence sap2010:Annotation.AnnotationText="" DisplayName="10-3. 엑셀3(유태호/최종현)" sap:VirtualizedContainerService.HintSize="450,256" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                      <Sequence sap2010:Annotation.AnnotationText="" DisplayName="10-3. 엑셀3(유태호/최종현)" sap:VirtualizedContainerService.HintSize="200,114" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -568,12 +568,8 @@
                                                         </sap:WorkflowViewStateService.ViewState>
                                                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="invoke\invoke_12-2_excel_write_2 - 복사 (1).xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_30" UnSafe="False" WorkflowFileName="invoke\invoke_12-2_excel_write_2 - 복사 (1).xaml">
                                                           <ui:InvokeWorkflowFile.Arguments>
-                                                            <InArgument x:TypeArguments="sd:DataTable" x:Key="In_DT_Workitem_Type1">
-                                                              <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="DT_Workitem_Type1" />
-                                                            </InArgument>
-                                                            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="In_config">
-                                                              <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="config" />
-                                                            </InArgument>
+                                                            <InArgument x:TypeArguments="sd:DataTable" x:Key="In_DT_Workitem_Type1">[DT_Workitem_Type1]</InArgument>
+                                                            <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="In_config">[config]</InArgument>
                                                           </ui:InvokeWorkflowFile.Arguments>
                                                         </ui:InvokeWorkflowFile>
                                                       </Sequence>
@@ -585,7 +581,7 @@
                                                               <av:Size x:Key="ShapeSize">200,127</av:Size>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <Sequence sap2010:Annotation.AnnotationText="//SMTP 활용 첨부 파일 업을시 메일 미발송" DisplayName="Send_Email" sap:VirtualizedContainerService.HintSize="200,127" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                                          <Sequence sap2010:Annotation.AnnotationText="//SMTP 활용 첨부 파일 업을시 메일 미발송" DisplayName="Send_Email" sap:VirtualizedContainerService.HintSize="496,1208" sap2010:WorkflowViewState.IdRef="Sequence_55">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -593,7 +589,7 @@
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
                                                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,94" sap2010:WorkflowViewState.IdRef="LogMessage_17" Message="[&quot;Email 발송 시작&quot;]" />
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_23">
+                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_23">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="x:String">[Str_To]</OutArgument>
                                                               </Assign.To>
@@ -601,7 +597,7 @@
                                                                 <InArgument x:TypeArguments="x:String">whdrk9050@gmail.com</InArgument>
                                                               </Assign.Value>
                                                             </Assign>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_24">
+                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_24">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="x:String">[Str_From]</OutArgument>
                                                               </Assign.To>
@@ -610,7 +606,7 @@
                                                               </Assign.Value>
                                                             </Assign>
                                                             <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABfLr/BJaRUyatzOpf/zM5gAAAAACAAAAAAAQZgAAAAEAACAAAAC2QsZ08+U1xBbPvJMEsR7WuDaSktOj/02/6gW57ab19AAAAAAOgAAAAAIAACAAAADMCzinUisbsMhLUxOmo3+kz0fyrBmVeBF0UG89r6YmrhAAAADFeRopH8akJ18kS4KTd/BqQAAAALDp3qtE21/BjR3lzLdn68HsJf7o7iQEmqReECyRoEwR24LoMp3izsB/mFwAe8pQ/B3sTzbXBuJW90BpsM9FCcI=" Result="[Password]" />
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_25">
+                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_25">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="x:String">[Str_SMTP]</OutArgument>
                                                               </Assign.To>
@@ -618,7 +614,7 @@
                                                                 <InArgument x:TypeArguments="x:String">SMTP.naver.com</InArgument>
                                                               </Assign.Value>
                                                             </Assign>
-                                                            <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_26">
+                                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_26">
                                                               <Assign.To>
                                                                 <OutArgument x:TypeArguments="x:Int32">[Int_Port]</OutArgument>
                                                               </Assign.To>
@@ -639,6 +635,7 @@
                                                               </ui:InvokeWorkflowFile.Arguments>
                                                             </ui:InvokeWorkflowFile>
                                                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,94" sap2010:WorkflowViewState.IdRef="LogMessage_18" Message="[&quot;Email 발송 완료&quot;]" />
+                                                            <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="Delay_2" />
                                                           </Sequence>
                                                         </FlowStep>
                                                       </FlowStep.Next>
