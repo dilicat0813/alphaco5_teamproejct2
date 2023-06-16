@@ -39,6 +39,8 @@ alphaco5_teamproejct2-2
 8. 축제 때문에 지방을 갔어? 근데 기존의 물가를 확인할 수 있으면 사람들이 이를 통해서 여행에서 불쾌한 경험을 줄임으로써 관광이 활성화될 수 있지 않을까?
 9. (소비자는 수요 공급 곡선에 민감하게 반응)
 
+\n
+/n
 
 - 도서추천 구독서비스(국립중앙도서관 기준이고, 다른 도서관으로 확장시킬 수 있음)
 1. https://www.bigdata-culture.kr/bigdata/user/data_market/list.do?dataCookieYn=N#!
