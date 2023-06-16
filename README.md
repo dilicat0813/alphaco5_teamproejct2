@@ -20,6 +20,7 @@ alphaco5_teamproejct2-2
   * https://www.myhome.go.kr/hws/portal/sch/selectRsdtRcritNtcView.do
 - 시설들의 위치정보를 별개의 홈페이지로 제공하는데, 통합정보 제공하는 플랫폼을 제안
   - https://www.eshare.go.kr/UserPortal/Upc/UpcMapSrch/index.do#none
+  - https://www.eshare.go.kr/UserPortal/Upm/Main/index.do
   - 라는 공공개방자원 지도를 넘어서야 하지만, 2주만으로 불가, 제공하지 않는 서비스를 골라서 제공하는 방법이 있긴 함. 
 - 경상북도_산림데이터 짬뽕 
   
