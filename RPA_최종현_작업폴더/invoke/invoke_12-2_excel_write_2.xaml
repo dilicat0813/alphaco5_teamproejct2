@@ -3,7 +3,7 @@
     <x:Property Name="In_DT_Workitem_Type1" Type="InArgument(sd:DataTable)" />
     <x:Property Name="In_config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>818.4,2844</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1234,3177</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -116,25 +116,23 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="654.4,2779.2" sap2010:WorkflowViewState.IdRef="Sequence_66">
+  <Sequence sap:VirtualizedContainerService.HintSize="654,3112" sap2010:WorkflowViewState.IdRef="Sequence_66">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="DT_Workitem_Exist" />
+      <Variable x:TypeArguments="x:Int32" Name="Int_cnt_0" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="592,1717.6" sap2010:WorkflowViewState.IdRef="Sequence_64">
-      <Sequence.Variables>
-        <Variable x:TypeArguments="x:Int32" Name="Int_cnt_0" />
-      </Sequence.Variables>
+    <Sequence sap:VirtualizedContainerService.HintSize="592,2056" sap2010:WorkflowViewState.IdRef="Sequence_64">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign sap2010:Annotation.AnnotationText="DT초기화&#xA;" sap:VirtualizedContainerService.HintSize="529.6,125.6" sap2010:WorkflowViewState.IdRef="Assign_30">
+      <Assign sap2010:Annotation.AnnotationText="DT초기화&#xA;" sap:VirtualizedContainerService.HintSize="530,124" sap2010:WorkflowViewState.IdRef="Assign_30">
         <Assign.To>
           <OutArgument x:TypeArguments="sd:DataTable">[DT_Workitem_Exist]</OutArgument>
         </Assign.To>
@@ -147,30 +145,22 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Company #" DataTable="[In_DT_Workitem_Type1]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="529.6,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
-      <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="City" DataTable="[In_DT_Workitem_Type1]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="529.6,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
-      <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Country" DataTable="[In_DT_Workitem_Type1]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="529.6,188" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[Int_cnt_0]" DataTable="[In_DT_Workitem_Type1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="529.6,553.6" sap2010:WorkflowViewState.IdRef="ForEachRow_7">
+      <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Company #" DataTable="[In_DT_Workitem_Type1]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
+      <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="City" DataTable="[In_DT_Workitem_Type1]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+      <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Country" DataTable="[In_DT_Workitem_Type1]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="530,186" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[Int_cnt_0]" DataTable="[In_DT_Workitem_Type1]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,432" sap2010:WorkflowViewState.IdRef="ForEachRow_7">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,436.8" sap2010:WorkflowViewState.IdRef="Sequence_63">
+            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,315" sap2010:WorkflowViewState.IdRef="Sequence_63">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_34">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:Object">[CurrentRow("Company #")]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:Object">[Int_cnt_0+1]</InArgument>
-                </Assign.Value>
-              </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_32">
+              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_32">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Object">[currentrow("City")]</OutArgument>
                 </Assign.To>
@@ -178,7 +168,7 @@
                   <InArgument x:TypeArguments="x:Object">[CurrentRow("City_Country").ToString.split(",")(0).Trim]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_33">
+              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_33">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Object">[currentrow("Country")]</OutArgument>
                 </Assign.To>
@@ -190,7 +180,7 @@
           </ActivityAction>
         </ui:ForEachRow.Body>
       </ui:ForEachRow>
-      <ui:FilterDataTable DataTable="[In_DT_Workitem_Type1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="529.6,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[DT_Workitem_Exist]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable DataTable="[In_DT_Workitem_Type1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="530,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[DT_Workitem_Exist]" SelectColumnsMode="Keep">
         <ui:FilterDataTable.Filters>
           <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
             <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
@@ -210,29 +200,54 @@
           </scg:List>
         </ui:FilterDataTable.SelectColumns>
       </ui:FilterDataTable>
-    </Sequence>
-    <Sequence sap:VirtualizedContainerService.HintSize="592,909.6" sap2010:WorkflowViewState.IdRef="Sequence_65">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:CopyFile ContinueOnError="{x:Null}" Destination="[In_config(&quot;Result&quot;).ToString+&quot;\&quot;+In_config(&quot;Temp2_name&quot;).ToString.replace(&quot;yy.MM.dd&quot;, Datetime.now.Tostring(&quot;yy.MM.dd&quot;)).replace(&quot;담당자이름&quot;, &quot;담당자&quot;).ToString+In_config(&quot;xlsx&quot;).ToString]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="483.2,155.2" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[In_config(&quot;Template&quot;).ToString+&quot;\&quot;+In_config(&quot;Temp2_name&quot;).ToString+In_config(&quot;xlsx&quot;).ToString]" />
-      <ui:ExcelApplicationScope Password="{x:Null}" AutoSave="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="483.2,602.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" Visible="False" WorkbookPath="[In_config(&quot;Result&quot;).ToString+&quot;\&quot;+In_config(&quot;Temp2_name&quot;).ToString.replace(&quot;yy.MM.dd&quot;, Datetime.now.Tostring(&quot;yy.MM.dd&quot;)).replace(&quot;담당자이름&quot;, &quot;담당자&quot;).ToString+In_config(&quot;xlsx&quot;).ToString]">
-        <ui:ExcelApplicationScope.Body>
-          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+      <ui:RemoveDuplicateRows DataTable="[DT_Workitem_Exist]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="530,80" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1" OutputDataTable="[DT_Workitem_Exist]" />
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[Int_cnt_0]" DataTable="[DT_Workitem_Exist]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,310" sap2010:WorkflowViewState.IdRef="ForEachRow_8">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="449.6,492.8" sap2010:WorkflowViewState.IdRef="Sequence_61">
+            <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_67">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ExcelInsertDeleteRows DisplayName="Insert/Delete Rows" sap:VirtualizedContainerService.HintSize="387.2,188" sap2010:WorkflowViewState.IdRef="ExcelInsertDeleteRows_2" Mode="Add" NoRows="10" Position="17" SheetName="[In_config(&quot;Temp2_sheet2&quot;).ToString]" />
-              <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_Workitem_Exist]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="387.2,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="[In_config(&quot;Temp2_sheet2&quot;).ToString]" StartingCell="C4" />
-              <ui:ExcelSaveWorkbook DisplayName="Save Workbook" sap:VirtualizedContainerService.HintSize="387.2,24.8" sap2010:WorkflowViewState.IdRef="ExcelSaveWorkbook_2" />
+              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_35">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Object">[CurrentRow("Company #")]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Object">[Int_cnt_0+1]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+      </ui:ForEachRow>
+    </Sequence>
+    <Sequence sap:VirtualizedContainerService.HintSize="592,905" sap2010:WorkflowViewState.IdRef="Sequence_65">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:CopyFile ContinueOnError="{x:Null}" Destination="[In_config(&quot;Result&quot;).ToString+&quot;\&quot;+In_config(&quot;Temp2_name&quot;).ToString.replace(&quot;yy.MM.dd&quot;, Datetime.now.Tostring(&quot;yy.MM.dd&quot;)).replace(&quot;담당자이름&quot;, &quot;담당자&quot;).ToString+In_config(&quot;xlsx&quot;).ToString]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="484,154" sap2010:WorkflowViewState.IdRef="CopyFile_2" Overwrite="True" Path="[In_config(&quot;Template&quot;).ToString+&quot;\&quot;+In_config(&quot;Temp2_name&quot;).ToString+In_config(&quot;xlsx&quot;).ToString]" />
+      <ui:ExcelApplicationScope Password="{x:Null}" AutoSave="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="484,600" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" Visible="False" WorkbookPath="[In_config(&quot;Result&quot;).ToString+&quot;\&quot;+In_config(&quot;Temp2_name&quot;).ToString.replace(&quot;yy.MM.dd&quot;, Datetime.now.Tostring(&quot;yy.MM.dd&quot;)).replace(&quot;담당자이름&quot;, &quot;담당자&quot;).ToString+In_config(&quot;xlsx&quot;).ToString]">
+        <ui:ExcelApplicationScope.Body>
+          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,490" sap2010:WorkflowViewState.IdRef="Sequence_61">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExcelInsertDeleteRows DisplayName="Insert/Delete Rows" sap:VirtualizedContainerService.HintSize="388,186" sap2010:WorkflowViewState.IdRef="ExcelInsertDeleteRows_2" Mode="Add" NoRows="10" Position="17" SheetName="[In_config(&quot;Temp2_sheet2&quot;).ToString]" />
+              <ui:ExcelWriteRange AddHeaders="False" DataTable="[DT_Workitem_Exist]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="[In_config(&quot;Temp2_sheet2&quot;).ToString]" StartingCell="C4" />
+              <ui:ExcelSaveWorkbook DisplayName="Save Workbook" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="ExcelSaveWorkbook_2" />
             </Sequence>
           </ActivityAction>
         </ui:ExcelApplicationScope.Body>

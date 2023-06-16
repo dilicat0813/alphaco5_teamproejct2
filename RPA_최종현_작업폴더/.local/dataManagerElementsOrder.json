@@ -23,15 +23,12 @@
       "Path": "0_통합본.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "Str_Test&Flowchart_1",
-        "Str_Get&Flowchart_1",
-        "Str_Search_URl&Flowchart_1",
-        "DT_Ex&Flowchart_1",
-        "Int_Port&Flowchart_1",
-        "Str_SMTP&Flowchart_1",
-        "Password&Flowchart_1",
-        "Str_From&Flowchart_1",
-        "Str_To&Flowchart_1",
+        "DT_Exchange&Flowchart_1",
+        "DT_ISO_EU&Flowchart_1",
+        "DT_ISO&Flowchart_1",
+        "DT_ISO_Main_Empty&Flowchart_1",
+        "DT_C1&Sequence_54",
+        "pswd&Sequence_1",
         "DT_ISO_Main&Flowchart_1",
         "DT_Workitem_Exist_2&Flowchart_1",
         "DT_Workitem_Type1_NoExist&Flowchart_1",
@@ -263,14 +260,14 @@
       "Path": "invoke/invoke_10_lookup_data_code.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "DT_ISO_Main&Sequence_36",
+        "Str_Country_name_kor&Sequence_37",
         "DT_ISO_numeric&Sequence_36",
         "DT_ISO_EU&Sequence_36",
         "Str_numeric&Sequence_37",
-        "Str_continent&Sequence_37",
         "Str_EU&Sequence_37"
       ],
       "ArgumentsSectionElementsOrder": [
+        "out_DT_ISO_Main",
         "in_config"
       ],
       "ConstantsSectionElementsOrder": [],
@@ -341,8 +338,8 @@
       "Path": "invoke/invoke_12-2_excel_write_2.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "DT_Workitem_Exist&Sequence_66",
-        "Int_cnt_0&Sequence_64"
+        "Int_cnt_0&Sequence_66",
+        "DT_Workitem_Exist&Sequence_66"
       ],
       "ArgumentsSectionElementsOrder": [
         "In_DT_Workitem_Type1",
@@ -427,6 +424,159 @@
       "ArgumentsSectionElementsOrder": [
         "in_login_id",
         "in_pswd"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_12-3-1_exchange_dt_make.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_C1&Sequence_89",
+        "DT_Exchange&Sequence_89",
+        "DT_ISO_EU&Sequence_89",
+        "DT_ISO_Main_Empty&Sequence_89",
+        "dump_value&Sequence_89",
+        "DT_C2&Sequence_68",
+        "DT_C3&Sequence_68",
+        "DT_C4&Sequence_68",
+        "DT_C5&Sequence_68",
+        "DT_C6&Sequence_68",
+        "DT_C7&Sequence_68",
+        "str_dump_1&Sequence_87",
+        "str_exchange_v&Sequence_78"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_out_DT_ISO_Main"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_12-3-2_excel_write_3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_Workitem_Exist&Sequence_66",
+        "val_exchange&Sequence_69",
+        "Int_cnt_0&Sequence_64",
+        "dbl_unitprice&Sequence_71",
+        "dbl_total&Sequence_71"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_DT_Workitem_Type1",
+        "In_config",
+        "In_DT_ISO_Main"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_07_vendor_search_이동및조사.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_get_text&Sequence_21"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "In_out_DT_Workitem_Type1",
+        "In_config",
+        "In_List_attach_2",
+        "in_SourceData_Path",
+        "In_pdf"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_08_VendorID_존재여부_데이터필터.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "In_Out_DT_Workitem_Type1",
+        "Out_DT_Workitem_NoExist_2",
+        "Out_DT_WorkItem_Exist_2"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_09_Add_invoice_Detail_입력.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "bln_find_element&Sequence_28",
+        "str_get_text&Sequence_28"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_config",
+        "in_DT_Workitem_Type1"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_08-1_UpdateWorkitem.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_Workitem_Exist&Sequence_44",
+        "DT_Workitem_NoExist_2&Sequence_44",
+        "DT_Workitem_NoExist_1&Sequence_44"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_config",
+        "in_DT_Workitem_Type1"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_13-1_Send_Email_NoExist_2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_List_Attach_NoExist2",
+        "in_Str_To",
+        "in_Title",
+        "in_Body",
+        "in_Password",
+        "in_Str_From",
+        "in_Str_SMTP",
+        "in_Int_Port"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_13-2_Send_Email_NoExist_1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_str_receive_mail",
+        "in_str_title",
+        "in_str_content",
+        "in_str_mail_id",
+        "in_str_smpt_address",
+        "in_passol",
+        "in_int_smpt_port",
+        "In_List_attach_1"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "invoke/invoke_04.Type=WI3Status=open.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "path_workitem_WIID&Sequence_16",
+        "get_texid&Sequence_16",
+        "cnt_idx&Sequence_11",
+        "Str_text1&Sequence_14",
+        "Str_text2&Sequence_14"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "inout_TD_Workitem",
+        "in_System1_URL",
+        "in_work_items",
+        "in_SourceData_Path"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
