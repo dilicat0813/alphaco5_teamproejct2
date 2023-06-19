@@ -145,6 +145,8 @@ InvoiceID,Vendor,Address,Date1,TaxID,City_Country,to_Name,to_address1,to_city,to
 
 
 [Actions,WIID,Description,Type,Status,Date,Exist,PDFType,InvoiceID,Vendor,Address,Date1,TaxID,City_Country,to_Name,to_address1,to_city,to_country,to_countrycode,description,unitprice,qty,total_price,subtotal,tax,total,VendorExist,Numeric Code,I/E,Remark,Company #,City,Country,환율
+
+
  ,93085014,Process Vendor Invoice,WI3,Open,2017-05-26,Yes,Type1,455359,Mecatronic Group,Bulevardul Unirii 11,2017-01-05,RO094782,"Iasi,Romania",ACME Systems Inc.,"RO012326, Somewhere Road, 59, Building A",Bucharest,Romania,RO,Beverages and Catering,268857 CAD,1,268857 CAD,268857 CAD,53771.4 CAD,322628 CAD,O,428,I,EU,1,Iasi,Romania,
  ,93085023,Process Vendor Invoice,WI3,Open,2019-07-04,Yes,Type1,135797,Green Restaurant,Strada Verde 67,2017-08-11,RO212121,"Iasi,Romania",ACME Systems Inc.,"RO012326, Somewhere Road, 59, Building A",Bucharest,Romania,RO,Beverages and Catering,70692 EUR,1,70692 EUR,70692 EUR,14138.4 EUR,84830.4 EUR,O,428,I,EU,2,Iasi,Romania,
  ,93085019,Process Vendor Invoice,WI3,Open,2020-10-23,Yes,Type1,181491,Copiers and More,Strada Copiatoarelor 33,2017-05-06,RO874231,"Brasov,Romania",ACME Systems Inc.,"RO012326, Somewhere Road, 59, Building A",Bucharest,Romania,RO,IT Support,22154 CAD,1,22154 CAD,22154 CAD,4430.8 CAD,26584.8 CAD,O,428,I,EU,3,Brasov,Romania,
